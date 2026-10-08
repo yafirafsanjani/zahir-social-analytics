@@ -69,7 +69,9 @@ zahir_social_analytics/
    - Accurately categorize content types (`carousel`, `image`, `video/reel`) using profile grid badges.
    - Capture collaborative posts via `is_collaboration`, `original_account`, and `source_url`.
    - Export dual standardized raw data: **RFC 4180 CSV** (for programmatic pipelines) and **Styled XLSX** (for human spreadsheet viewing).
-   - Ingest authentic user review records from the Google Play Store dataset.
+   - Ingest authentic user review records from the Google Play Store dataset (417 reviews across 5 Zahir ecosystem applications).
+   - Apply privacy-reduction techniques (removing user profile images and hashing reviewer identifiers).
+   - Execute conservative text cleaning (preserving negation, emojis, and sentiment signals) and compute response turnaround time.
 2. **Preprocessing & Text Normalization**:
    - Cleaning captions and reviews (punctuation removal, lowercase conversion, slang normalization, Indonesian stopword filtering).
 3. **Exploratory Data Analysis (EDA)**:
@@ -86,10 +88,14 @@ zahir_social_analytics/
 
 This project strictly follows ethical research and platform compliance guidelines:
 - **Strict Public Access**: Extraction applies exclusively to publicly accessible web information. No CAPTCHAs, login walls, or anti-bot mechanisms are bypassed.
-- **Accessible Session Limitation**: Without login, Instagram restricts grid viewing to the initial 12 public posts. In strict adherence to ethics, no attempt is made to bypass this restriction. The collected raw dataset represents **"seluruh postingan yang dapat diakses secara publik dalam sesi pengambilan data"**.
+- **Public Access Scope & Platform Limitations**: Dataset aktif Instagram proyek ini berisi **55 postingan** yang diperoleh secara sah melalui proses akuisisi web publik tanpa login. Tanpa autentikasi, platform membatasi grid feed profil ke 12 item dan tab reels ke 44 item sebelum memunculkan batas interaksi publik. Dataset 55 postingan ini menjadi baseline resmi yang dikunci dan dianalisis dalam proyek.
+- **Authenticated Feasibility Assessment (Phase 1.7)**: Pengujian manual peramban terotentikasi (*logged-in session*) oleh pemilik proyek mengonfirmasi adanya potensi visibilitas historis yang lebih luas (>500 postingan profil dan >100 reels yang mencakup arsip hingga 2017). Visibilitas terotentikasi ini diperlakukan secara ketat sebagai **temuan kelayakan teknis (feasibility finding)**, BUKAN sebagai dataset yang telah dikumpulkan. Demi kepatuhan etika data dan keamanan akun, proyek tidak melakukan otomasi scraping berbasis sesi pribadi. Kelengkapan historis menyeluruh tidak diklaim dalam dataset baseline.
 - **Dual Format Output**: Data raw disimpan dalam format CSV terenkapsulasi penuh (`QUOTE_ALL`) dan format Excel XLSX dengan penyesuaian lebar kolom agar tidak terpotong saat dibuka di spreadsheet.
 - **Unavailable Public Metrics (`views`)**: Play counts/views are not exposed on unauthenticated Instagram web endpoints; these remain recorded as `NaN` without speculation.
 - **Collaborative Posts**: Collaborative posts shown on `@zahiraccounting`'s public feed are tracked with complete provenance to distinguish internal content from co-authored posts.
+- **Play Store Exploratory Data Analysis & Customer Voice (Phase 3)**: Seluruh 417 ulasan terproses telah dianalisis secara komprehensif pada 
+otebooks/05_playstore_eda.ipynb. Analisis mencakup profil distribusi rating, disparitas antar-aplikasi, tren temporal (2018–2026), keterlibatan tanggapan pengembang (87.8% balasan), penanganan audit artefak temporal waktu respon (15 kasus pembaruan ulasan pasca-tanggapan), sinyal engagement thumbs-up, serta karakteristik panjang teks. Pemodelan linguistik sentimen dan topic modeling NLP diisolasi secara metodologis untuk fase lanjutan.
+- **Play Store Privacy-Reduced Analytical Dataset (Phase 2)**: Dataset mentah Google Play Store (417 ulasan) dipertahankan tanpa perubahan (*immutable*). Pada dataset analitik olahan (`data/final/playstore_reviews_final.csv`), privasi dilindungi dengan menghapus URL avatar dan menyamarkan nama akun pengguna menjadi `reviewer_id` berbasis hash SHA-256. Nilai rating bintang dan polaritas sentimen teks diperlakukan secara terpisah secara metodologis.
 - **Zero Credentials Policy**: No passwords, cookies, session IDs, or private tokens are requested, used, or stored.
 - **Repository Safety**: Datasets (`data/raw/`, `data/final/`) and internal logs (`AGENTS.md`) are completely excluded via `.gitignore`.
 
@@ -130,8 +136,10 @@ streamlit run dashboard/app.py
 
 - [x] **Fase 0: Setup Lingkungan & Tata Kelola Proyek**
 - [x] **Fase 1: Scraping Data Publik Instagram & Standarisasi Output Ganda (CSV & XLSX)**
-- [ ] **Fase 2: Ingestion & Verifikasi Dataset Play Store**
-- [ ] **Fase 3: Preprocessing & Pembersihan Teks**
-- [ ] **Fase 4: Exploratory Data Analysis (EDA)**
-- [ ] **Fase 5: Analisis Sentimen & Topik**
-- [ ] **Fase 6: Sintesis Cross-Platform & Dashboard Streamlit**
+- [x] **Fase 1.5: Instagram Scraping Expansion & Coverage Audit (55 Postingan Publik Valid)**
+- [x] **Fase 1.6: Sampling Bias Audit & Frozen Baseline Establishment (55 Baseline Posts Locked)**
+- [x] **Fase 1.7: Authenticated Access Feasibility & Acquisition Design**
+- [x] **Fase 2: Preprocessing & Data Cleaning Play Store (417 Ulasan Olahan & Skema Analitik)**
+- [x] **Fase 3: Exploratory Data Analysis (EDA) & Customer Voice Play Store (417 Ulasan Dianalisis)**
+- [ ] **Fase 4: NLP Sentiment Analysis & Aspect / Topic Modeling**
+- [ ] **Fase 5: Sintesis Cross-Platform & Dashboard Streamlit**

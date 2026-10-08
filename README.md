@@ -141,5 +141,6 @@ streamlit run dashboard/app.py
 - [x] **Fase 1.7: Authenticated Access Feasibility & Acquisition Design**
 - [x] **Fase 2: Preprocessing & Data Cleaning Play Store (417 Ulasan Olahan & Skema Analitik)**
 - [x] **Fase 3: Exploratory Data Analysis (EDA) & Customer Voice Play Store (417 Ulasan Dianalisis)**
+- [x] **Fase 3.1: EDA Validation & Interpretation Correction (Audit Angka & Koreksi Over-interpretasi)**
 - [ ] **Fase 4: NLP Sentiment Analysis & Aspect / Topic Modeling**
 - [ ] **Fase 5: Sintesis Cross-Platform & Dashboard Streamlit**

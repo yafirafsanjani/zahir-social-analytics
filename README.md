@@ -142,5 +142,6 @@ streamlit run dashboard/app.py
 - [x] **Fase 2: Preprocessing & Data Cleaning Play Store (417 Ulasan Olahan & Skema Analitik)**
 - [x] **Fase 3: Exploratory Data Analysis (EDA) & Customer Voice Play Store (417 Ulasan Dianalisis)**
 - [x] **Fase 3.1: EDA Validation & Interpretation Correction (Audit Angka & Koreksi Over-interpretasi)**
-- [ ] **Fase 4: NLP Sentiment Analysis & Aspect / Topic Modeling**
+- [x] **Fase 4.1: Full Gold Set Preparation & Sentiment Analysis Readiness Audit (417 Ulasan Disiapkan untuk Anotasi Manual)**
+- [ ] **Fase 4.2: NLP Sentiment Analysis & Aspect / Topic Modeling**
 - [ ] **Fase 5: Sintesis Cross-Platform & Dashboard Streamlit**

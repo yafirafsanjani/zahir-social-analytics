@@ -1,0 +1,299 @@
+{
+  "login_auth": {
+    "aspect_id": "login_auth",
+    "aspect_name": "Authentication & Access",
+    "description": "User authentication, credential handling, account registration, and access barriers.",
+    "keywords_id": [
+      "login",
+      "log in",
+      "log out",
+      "logout",
+      "masuk",
+      "password",
+      "sandi",
+      "kata sandi",
+      "lupa sandi",
+      "lupa password",
+      "buat akun",
+      "bikin akun",
+      "daftar",
+      "registrasi",
+      "verifikasi",
+      "gagal masuk",
+      "susah masuk",
+      "sulit masuk",
+      "email sudah terdaftar",
+      "akun"
+    ],
+    "keywords_en": [
+      "sign in",
+      "sign up",
+      "register",
+      "user id",
+      "otp",
+      "not to allowed"
+    ],
+    "slang_variants": [
+      "gabisa masuk",
+      "ga bisa masuk",
+      "gabisa login",
+      "ga bisa login",
+      "login akun"
+    ],
+    "inclusion_rules": "Matches login, sign-in, credential entry, account verification, and session timeouts.",
+    "exclusion_and_ambiguity_notes": "'akun' is paired with access/registration context to avoid false positives with accounting chart of accounts (nama akun kas)."
+  },
+  "crash_stability": {
+    "aspect_id": "crash_stability",
+    "aspect_name": "System Stability & Crash",
+    "description": "Application crashes, freezing, sudden closures, performance latency, and system bugs.",
+    "keywords_id": [
+      "keluar sendiri",
+      "close sendiri",
+      "auto close",
+      "keluar terus",
+      "lemot",
+      "lambat",
+      "lelet",
+      "ngelag",
+      "macet",
+      "mental",
+      "loading lama",
+      "loading terus",
+      "eror",
+      "error"
+    ],
+    "keywords_en": [
+      "force close",
+      "fc",
+      "crash",
+      "lag",
+      "hang",
+      "freeze",
+      "bug",
+      "stuck",
+      "loading"
+    ],
+    "slang_variants": [
+      "mental mulu",
+      "mental terus",
+      "eror mulu",
+      "error mulu",
+      "ngelag parah"
+    ],
+    "inclusion_rules": "Matches unexpected application shutdown, hanging screens, persistent error dialogues, and UI freezes.",
+    "exclusion_and_ambiguity_notes": "'error' is matched in system failure context. 'close' is matched via 'force close' or 'close sendiri' to avoid confusing with accounting period closing (tutup buku)."
+  },
+  "pricing_subscription": {
+    "aspect_id": "pricing_subscription",
+    "aspect_name": "Pricing & Subscription",
+    "description": "Software monetization, subscription tiers, renewal fees, trial limitations, and licensing costs.",
+    "keywords_id": [
+      "berbayar",
+      "bayar",
+      "harus bayar",
+      "disuruh bayar",
+      "langganan",
+      "berlangganan",
+      "tarif",
+      "harga",
+      "mahal",
+      "gratis",
+      "gratiss",
+      "tagihan",
+      "perpanjang",
+      "perpanjangan",
+      "kadaluarsa",
+      "masa aktif",
+      "beli",
+      "biaya"
+    ],
+    "keywords_en": [
+      "subscription",
+      "free",
+      "trial",
+      "expired",
+      "pricing"
+    ],
+    "slang_variants": [
+      "ujung2nya bayar",
+      "gak gratis",
+      "ga gratis",
+      "ngga gratis"
+    ],
+    "inclusion_rules": "Matches discussions of software cost, subscription requirements, paid versus free versions, and license expiration.",
+    "exclusion_and_ambiguity_notes": "'bayar' in POS retail transactions is distinguished where possible; rule targets software access payments and subscription tiers."
+  },
+  "sync_cloud_data": {
+    "aspect_id": "sync_cloud_data",
+    "aspect_name": "Cloud & Database Synchronization",
+    "description": "Multi-device cloud synchronization, database connection, server downtime, and stored data loss.",
+    "keywords_id": [
+      "sinkron",
+      "sinkronisasi",
+      "data hilang",
+      "hilang datanya",
+      "data terhapus",
+      "data tidak tersimpan",
+      "gagal simpan",
+      "tidak tersimpan",
+      "sambungan server",
+      "server down"
+    ],
+    "keywords_en": [
+      "sync",
+      "cloud",
+      "database",
+      "server",
+      "backup",
+      "restore",
+      "real time"
+    ],
+    "slang_variants": [
+      "data kehapus",
+      "data ilang",
+      "ga sinkron",
+      "gak sinkron"
+    ],
+    "inclusion_rules": "Matches cloud database connectivity, sync failure between mobile and web/desktop, and data disappearance.",
+    "exclusion_and_ambiguity_notes": "'data' is required to appear alongside sync, storage, or loss predicates to avoid capturing general data entry."
+  },
+  "pos_hardware_print": {
+    "aspect_id": "pos_hardware_print",
+    "aspect_name": "POS & Hardware Printing",
+    "description": "Point-of-Sale hardware peripherals, Bluetooth thermal printers, receipt layout, barcode, and cash drawers.",
+    "keywords_id": [
+      "cetak",
+      "cetak struk",
+      "cetak nota",
+      "struk",
+      "nota",
+      "kasir",
+      "laci kasir",
+      "laci"
+    ],
+    "keywords_en": [
+      "print",
+      "printer",
+      "thermal",
+      "bluetooth",
+      "pos",
+      "barcode",
+      "scanner",
+      "drawer",
+      "receipt"
+    ],
+    "slang_variants": [
+      "ngeprint",
+      "printer bluetooth",
+      "print struk",
+      "susah cetak",
+      "gabisa cetak"
+    ],
+    "inclusion_rules": "Matches hardware peripheral integration, thermal paper printing, Bluetooth printer pairing, and retail cash register functions.",
+    "exclusion_and_ambiguity_notes": "'pos' is matched with word boundary to avoid substrings in words like 'posisi'."
+  },
+  "inventory_accounting": {
+    "aspect_id": "inventory_accounting",
+    "aspect_name": "Core Accounting & Inventory",
+    "description": "Bookkeeping features, stock management, financial reports, transaction recording, and invoicing.",
+    "keywords_id": [
+      "stok",
+      "stok barang",
+      "barang",
+      "produk",
+      "transaksi",
+      "laporan",
+      "faktur",
+      "hutang",
+      "piutang",
+      "jurnal",
+      "neraca",
+      "laba rugi",
+      "keuangan",
+      "pembukuan",
+      "akuntansi",
+      "penjualan",
+      "pembelian",
+      "po"
+    ],
+    "keywords_en": [
+      "stock",
+      "inventory",
+      "invoice",
+      "accounting",
+      "purchase order"
+    ],
+    "slang_variants": [
+      "input barang",
+      "laporan keuangan",
+      "ubah po",
+      "bikin po"
+    ],
+    "inclusion_rules": "Matches core accounting transactions, ledger management, inventory tracking, financial statements, and invoice processing.",
+    "exclusion_and_ambiguity_notes": "'po' matches Purchase Order context; 'laporan' matches financial and transactional reports."
+  },
+  "certification_exam": {
+    "aspect_id": "certification_exam",
+    "aspect_name": "Certification Exam Engine",
+    "description": "Zahir Certification app functionality: exam sessions, question navigation, scoring, and certificate issuance.",
+    "keywords_id": [
+      "ujian",
+      "soal",
+      "sertifikasi",
+      "sertifikat",
+      "nilai",
+      "skor",
+      "tes",
+      "waktu ujian",
+      "ujikom"
+    ],
+    "keywords_en": [
+      "exam",
+      "test",
+      "certificate",
+      "score"
+    ],
+    "slang_variants": [
+      "tes sertifikasi",
+      "mulai ujian",
+      "soal ujian",
+      "ujikom zahir"
+    ],
+    "inclusion_rules": "Matches student/professional certification test sessions, test questions, grading, and digital certificate delivery.",
+    "exclusion_and_ambiguity_notes": "'nilai' is matched in examination grading context rather than financial asset valuation."
+  },
+  "attendance_face": {
+    "aspect_id": "attendance_face",
+    "aspect_name": "Face Attendance & Geolocation",
+    "description": "Zahir Attendance app workflows: facial biometric scanning, GPS location verification, and attendance check-in/out.",
+    "keywords_id": [
+      "absen",
+      "absensi",
+      "presensi",
+      "wajah",
+      "foto",
+      "kamera",
+      "lokasi",
+      "jam kerja",
+      "peta"
+    ],
+    "keywords_en": [
+      "face",
+      "selfie",
+      "gps",
+      "check in",
+      "check out",
+      "clock in"
+    ],
+    "slang_variants": [
+      "scan wajah",
+      "absen wajah",
+      "deteksi wajah",
+      "titik gps",
+      "lokasi palsu"
+    ],
+    "inclusion_rules": "Matches employee attendance clocking, selfie photo capture, facial detection accuracy, and GPS location radius.",
+    "exclusion_and_ambiguity_notes": "'lokasi' and 'foto' are paired with attendance and selfie validation context."
+  }
+}

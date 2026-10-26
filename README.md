@@ -143,5 +143,9 @@ streamlit run dashboard/app.py
 - [x] **Fase 3: Exploratory Data Analysis (EDA) & Customer Voice Play Store (417 Ulasan Dianalisis)**
 - [x] **Fase 3.1: EDA Validation & Interpretation Correction (Audit Angka & Koreksi Over-interpretasi)**
 - [x] **Fase 4.1: Full Gold Set Preparation & Sentiment Analysis Readiness Audit (417 Ulasan Disiapkan untuk Anotasi Manual)**
-- [ ] **Fase 4.2: NLP Sentiment Analysis & Aspect / Topic Modeling**
-- [ ] **Fase 5: Sintesis Cross-Platform & Dashboard Streamlit**
+- [x] **Fase 4.2: Final Gold Set Validation & Freeze (417 Ulasan Teranotasi Manusia Tervalidasi & Dikunci)**
+- [x] **Fase 4.3: NLP Sentiment Benchmarking & Baseline Comparison (IndoBERT vs InSet Lexicon vs Baseline)**
+- [x] **Fase 5.1: Topic Analysis Readiness Audit (Audit Kualitas Teks, Evaluasi Metodologi & Lingkup Data)**
+- [x] **Fase 5.2: Aspect Taxonomy Construction & Customer Voice Extraction (8 Aspek Produk Terformalitasi & Tervalidasi)**
+- [x] **Fase 5.3: Manual Validation & Quality Audit (Rekonsiliasi 206 vs 242 Mention, Audit Kata Kunci, & Lembar Kerja Validasi Manual 30 Sampel)**
+- [ ] **Fase 6: Sintesis Cross-Platform & Dashboard Interaktif Streamlit**

@@ -148,4 +148,6 @@ streamlit run dashboard/app.py
 - [x] **Fase 5.1: Topic Analysis Readiness Audit (Audit Kualitas Teks, Evaluasi Metodologi & Lingkup Data)**
 - [x] **Fase 5.2: Aspect Taxonomy Construction & Customer Voice Extraction (8 Aspek Produk Terformalitasi & Tervalidasi)**
 - [x] **Fase 5.3: Manual Validation Integration & Quality Audit (Integrasi Validasi Manual 30 Sampel, Rekonsiliasi Multi-Label, Remediasi Kata Kunci Terkontrol, & Laporan Audit Akhir)**
+- [x] **Fase 5.4: Instagram Preprocessing & Final Dataset (Standardisasi Temporal WIB, Pembersihan Caption, & Dataset Final 55 Postingan)**
+- [ ] **Fase 5.5: Instagram Social Engagement & Content Performance Analysis**
 - [ ] **Fase 6: Sintesis Cross-Platform & Dashboard Interaktif Streamlit**

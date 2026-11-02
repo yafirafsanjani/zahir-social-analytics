@@ -1,0 +1,29 @@
+﻿analysis_dimension,segment,post_count,post_share_pct,total_likes,mean_likes,median_likes,total_comments,mean_comments,median_comments,total_interactions,mean_interactions,median_interactions,min_interactions,max_interactions,notes
+Content Type,video/reel,44,80.0,12040,273.64,55.0,432,9.82,0.5,12472,283.45,61.5,1,3217,Format video/reel; n=44
+Content Type,carousel,8,14.55,588,73.5,33.0,70,8.75,10.0,658,82.25,45.0,4,342,Format carousel; n=8
+Content Type,image,3,5.45,15,5.0,5.0,2,0.67,0.0,17,5.67,5.0,4,8,Format image; n=3
+Overall Baseline,Total / All 55 Posts,55,100.0,12643,229.87,44.0,504,9.16,1.0,13147,239.04,51.0,1,3217,Populasi lengkap 55 postingan Instagram publik Zahir
+Collaboration Status,Organic Content (@zahiraccounting),29,52.73,1214,41.86,25.0,59,2.03,0.0,1273,43.9,25.0,1,226,Postingan tunggal internal
+Collaboration Status,Collaborative Content (Partners & Creators),26,47.27,11429,439.58,96.0,445,17.12,2.0,11874,456.69,97.0,22,3217,Co-authored dengan akun mitra / founder
+Partner Accounts,@pecahtelur.id,8,14.55,7014,876.75,634.0,44,5.5,3.0,7058,882.25,635.5,88,3212,Entitas akun kreator/mitra @pecahtelur.id
+Partner Accounts,@muhamad.is,14,25.45,4306,307.57,86.5,382,27.29,4.5,4688,334.86,90.5,36,3217,Entitas akun kreator/mitra @muhamad.is
+Partner Accounts,@zahirerp,1,1.82,32,32.0,32.0,18,18.0,18.0,50,50.0,50.0,50,50,Entitas akun kreator/mitra @zahirerp
+Partner Accounts,@zahironlineid,2,3.64,52,26.0,26.0,0,0.0,0.0,52,26.0,26.0,22,30,Entitas akun kreator/mitra @zahironlineid
+Partner Accounts,@modalngobrol,1,1.82,25,25.0,25.0,1,1.0,1.0,26,26.0,26.0,26,26,Entitas akun kreator/mitra @modalngobrol
+Partner Accounts,@zahiraccounting,29,52.73,1214,41.86,25.0,59,2.03,0.0,1273,43.9,25.0,1,226,Entitas akun kreator/mitra @zahiraccounting
+Day of Week,Monday,8,14.55,376,47.0,34.5,19,2.38,0.5,395,49.38,39.0,14,121,Hari penayangan Monday
+Day of Week,Tuesday,7,12.73,3312,473.14,78.0,328,46.86,2.0,3640,520.0,79.0,5,3217,Hari penayangan Tuesday
+Day of Week,Wednesday,8,14.55,699,87.38,24.0,21,2.62,0.5,720,90.0,24.5,4,522,Hari penayangan Wednesday
+Day of Week,Thursday,12,21.82,4187,348.92,68.5,69,5.75,3.0,4256,354.67,73.5,4,3212,Hari penayangan Thursday
+Day of Week,Friday,16,29.09,2690,168.12,52.0,47,2.94,0.0,2737,171.06,61.0,1,900,Hari penayangan Friday
+Day of Week,Saturday,3,5.45,445,148.33,137.0,13,4.33,2.0,458,152.67,148.0,8,302,Hari penayangan Saturday
+Day of Week,Sunday,1,1.82,934,934.0,934.0,7,7.0,7.0,941,941.0,941.0,941,941,Hari penayangan Sunday
+Time of Day Bin,Morning (06:00-11:59),19,34.55,10755,566.05,204.0,394,20.74,2.0,11149,586.79,209.0,4,3217,Segmen jam WIB Morning (06:00-11:59)
+Time of Day Bin,Afternoon (12:00-14:59),11,20.0,401,36.45,32.0,58,5.27,1.0,459,41.73,50.0,5,88,Segmen jam WIB Afternoon (12:00-14:59)
+Time of Day Bin,Late Afternoon (15:00-17:59),12,21.82,414,34.5,27.0,22,1.83,0.0,436,36.33,27.0,14,96,Segmen jam WIB Late Afternoon (15:00-17:59)
+Time of Day Bin,Evening/Night (18:00-23:59),13,23.64,1073,82.54,54.0,30,2.31,2.0,1103,84.85,56.0,1,226,Segmen jam WIB Evening/Night (18:00-23:59)
+Publication Year,2024,32,58.18,8410,262.81,55.0,93,2.91,0.0,8503,265.72,61.5,8,3212,Tahun publikasi 2024
+Publication Year,2025,11,20.0,3605,327.73,78.0,338,30.73,1.0,3943,358.45,79.0,1,3217,Tahun publikasi 2025
+Publication Year,2026,12,21.82,628,52.33,28.0,73,6.08,2.0,701,58.42,31.0,4,342,Tahun publikasi 2026
+Hashtag Presence,Tanpa Tagar (0 Hashtags),16,29.09,8010,500.62,264.0,85,5.31,3.0,8095,505.94,264.0,18,3212,Simpson paradox: 0 tagar terdistorsi @pecahtelur.id
+Hashtag Presence,Menggunakan Tagar (>=1 Hashtags),39,70.91,4633,118.79,32.0,419,10.74,1.0,5052,129.54,38.0,1,3217,Postingan dengan 1-16 tagar

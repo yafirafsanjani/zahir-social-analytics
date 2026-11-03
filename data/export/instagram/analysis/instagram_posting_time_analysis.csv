@@ -1,0 +1,15 @@
+﻿time_dimension,time_category,post_count,post_share_pct,total_interactions,mean_interactions,median_interactions,min_interactions,max_interactions,std_interactions,iqr_interactions
+Day of Week,Monday,8,14.55,395,49.38,39.0,14,121,36.74,34.5
+Day of Week,Tuesday,7,12.73,3640,520.0,79.0,5,3217,1191.48,136.5
+Day of Week,Wednesday,8,14.55,720,90.0,24.5,4,522,175.73,27.25
+Day of Week,Thursday,12,21.82,4256,354.67,73.5,4,3212,904.84,85.5
+Day of Week,Friday,16,29.09,2737,171.06,61.0,1,900,270.99,96.75
+Day of Week,Saturday,3,5.45,458,152.67,148.0,8,302,147.06,147.0
+Day of Week,Sunday,1,1.82,941,941.0,941.0,941,941,0.0,0.0
+Time of Day Bin,Morning (06:00-11:59),19,34.55,11149,586.79,209.0,4,3217,973.34,580.5
+Time of Day Bin,Afternoon (12:00-14:59),11,20.0,459,41.73,50.0,5,88,27.84,40.0
+Time of Day Bin,Late Afternoon (15:00-17:59),12,21.82,436,36.33,27.0,14,96,25.32,16.5
+Time of Day Bin,Evening/Night (18:00-23:59),13,23.64,1103,84.85,56.0,1,226,74.15,89.0
+Year,2024,32,58.18,8503,265.72,61.5,8,3212,594.97,193.25
+Year,2025,11,20.0,3943,358.45,79.0,1,3217,949.77,64.0
+Year,2026,12,21.82,701,58.42,31.0,4,342,93.52,46.75

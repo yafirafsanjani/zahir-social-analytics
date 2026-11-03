@@ -1,0 +1,5 @@
+"num_clusters_k","silhouette_score","inertia","algorithm","random_seed","coherence_assessment"
+"3","0.0227","168.99","KMeans","42","Low / Diffuse (Silhouette < 0.05 indicates high overlap and lack of distinct cluster separation in short text)"
+"4","0.0204","167.17","KMeans","42","Low / Diffuse (Silhouette < 0.05 indicates high overlap and lack of distinct cluster separation in short text)"
+"5","0.0218","165.23","KMeans","42","Low / Diffuse (Silhouette < 0.05 indicates high overlap and lack of distinct cluster separation in short text)"
+"6","0.0202","163.6","KMeans","42","Low / Diffuse (Silhouette < 0.05 indicates high overlap and lack of distinct cluster separation in short text)"

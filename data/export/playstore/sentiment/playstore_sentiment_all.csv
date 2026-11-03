@@ -1,0 +1,418 @@
+﻿review_id,app_name,review_date,score,rating_category,human_sentiment_label,sentiment_label_source,benchmark_split,test_pred_indobert,test_indobert_confidence,test_pred_inset_lexicon,test_inset_score,test_pred_tfidf_lr,test_tfidf_lr_confidence
+db013820-004c-4ad3-82fd-4fb18de20967,Zahir Attendance,2025-10-08,5,positive,neutral,gold_set_human_annotated,test,negative,0.9501,negative,-8.0,neutral,0.5282
+8817939a-5285-4ebf-99cb-1a04b1ac2862,Zahir Attendance,2025-10-06,1,critical,negative,gold_set_human_annotated,development,,,,,,
+d21ab8dd-1042-4fca-8985-106d702cdb60,Zahir Attendance,2025-09-29,3,neutral,negative,gold_set_human_annotated,test,negative,0.9344,negative,-8.0,negative,0.3947
+1d4508ff-30a4-4a18-b6f3-2aae38f5b9a7,Zahir Attendance,2025-08-28,1,critical,negative,gold_set_human_annotated,test,negative,0.5895,negative,-15.0,neutral,0.6414
+ddc0eb85-82f8-46da-a285-e735a90ae1b3,Zahir Attendance,2025-07-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+8a030a84-3dc8-4792-8158-774d938a8d9e,Zahir Attendance,2024-10-02,5,positive,positive,gold_set_human_annotated,test,positive,0.9444,positive,4.0,positive,0.7
+18c093ea-5ce5-4677-be28-63eda6484f21,Zahir Attendance,2023-12-22,5,positive,positive,gold_set_human_annotated,test,positive,0.9937,negative,-13.0,positive,0.7938
+becc3757-9d5e-4d7d-81aa-beaa3157ca07,Zahir Attendance,2023-07-25,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b0ff04a5-873a-41f8-8f1b-4c805e583712,Zahir Attendance,2023-05-31,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9b1e2a78-e054-43be-8d3f-06bb76459f8f,Zahir Attendance,2023-02-10,1,critical,negative,gold_set_human_annotated,development,,,,,,
+3be5fcf9-bd0d-4fa1-88e5-d7810e399401,Zahir Attendance,2022-11-30,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9a20c511-8854-40fc-be4b-788384e94c4d,Zahir Attendance,2022-09-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+d6817d48-0e67-45ea-925b-42df55c147c9,Zahir Attendance,2022-08-06,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+f9485bda-b8cd-4c7b-bf11-fcfca107364b,Zahir Attendance,2022-07-04,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+cfe6fb72-91c2-4be4-8a87-4bae9e889f38,Zahir Attendance,2021-06-07,5,positive,positive,gold_set_human_annotated,development,,,,,,
+871142cf-9fa1-442a-afdc-688ec890c27a,Zahir Attendance,2020-10-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+5f3de11f-fd3d-4e6d-939e-15f55953dd2b,Zahir Attendance,2020-08-13,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+ac4da0cd-bdeb-4d45-b94a-3130c57afa9e,Zahir Attendance,2020-06-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+950c3125-2b93-4b83-a6f8-3189b2119537,Zahir Attendance,2020-06-03,4,positive,positive,gold_set_human_annotated,development,,,,,,
+ef453156-d5aa-4bd6-ada0-82b8e0d489ee,Zahir Attendance,2020-06-02,5,positive,positive,gold_set_human_annotated,test,positive,0.9901,negative,-8.0,positive,0.6276
+10279709-35e2-48df-9f14-6180cf81761f,Zahir Attendance,2020-04-19,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c0a5323f-b1ff-4f06-8b56-6452745217f2,Zahir Attendance,2023-12-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+f6d2ad20-1ea4-415c-a0ba-6d8d284db3ae,Zahir Attendance,2023-04-06,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c23dcdb9-76e5-44c2-972d-267e82b99ba0,Zahir Attendance,2022-10-25,5,positive,positive,gold_set_human_annotated,development,,,,,,
+44b8519f-38c9-4644-81e8-8dd10cfb3ff6,Zahir Attendance,2022-09-23,5,positive,positive,gold_set_human_annotated,development,,,,,,
+31110c7a-027a-4650-8ddb-aab85a91658c,Zahir Attendance,2021-01-09,4,positive,positive,gold_set_human_annotated,development,,,,,,
+da39a832-ccb2-42d5-9859-b000ff55195f,Zahir Attendance,2020-09-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ca97401c-eeea-415d-9c79-9cca1ac15a99,Zahir Attendance,2020-05-12,5,positive,positive,gold_set_human_annotated,development,,,,,,
+8ad3f964-a096-4681-99be-849c11ab5f6d,Zahir Certification,2025-11-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+658adba9-bb13-4687-80a0-cb1ef55f0da4,Zahir Certification,2023-03-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+eb448ce6-9a56-4937-80f9-9ff25f222243,Zahir Certification,2022-12-28,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+b7468b35-22ff-4cf5-a69a-b949ed2d8972,Zahir Certification,2022-07-07,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+0cc80c57-4145-49e2-8448-64022eb0ae73,Zahir Certification,2022-05-23,1,critical,negative,gold_set_human_annotated,development,,,,,,
+2b185475-4859-4823-860f-d61806f055a0,Zahir Certification,2022-04-10,2,critical,negative,gold_set_human_annotated,development,,,,,,
+697485aa-66b3-4524-963f-9018ae950da7,Zahir Certification,2022-01-01,1,critical,negative,gold_set_human_annotated,development,,,,,,
+422b8e0b-502d-45f6-ad1b-99e0e297ca19,Zahir Certification,2021-12-12,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a9decc58-0109-4326-ac5a-7fa28f02ac04,Zahir Certification,2021-04-19,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+824c6d6d-0355-4607-9f86-ec3ce26d0c03,Zahir Certification,2020-11-20,1,critical,negative,gold_set_human_annotated,development,,,,,,
+0553a95e-4db5-43ae-8de9-d8d7ca6834df,Zahir Certification,2020-11-15,1,critical,negative,gold_set_human_annotated,development,,,,,,
+0e410e9f-a442-4764-9dac-a345ef5a7fc6,Zahir Certification,2020-10-16,2,critical,negative,gold_set_human_annotated,development,,,,,,
+f8a2c798-52fa-4cbf-8b09-8bd726ce2c30,Zahir Certification,2020-09-21,1,critical,negative,gold_set_human_annotated,development,,,,,,
+c6c44399-9ffd-4388-b074-f1e8a6757852,Zahir Certification,2020-09-16,1,critical,negative,gold_set_human_annotated,development,,,,,,
+6f178a31-8405-4d13-947d-35a7eb898af1,Zahir Certification,2020-09-16,1,critical,neutral,gold_set_human_annotated,test,negative,0.9656,negative,-37.0,negative,0.5768
+b4a16ecf-43ba-40a7-9c37-ab12891ca62d,Zahir Certification,2020-09-03,2,critical,neutral,gold_set_human_annotated,test,negative,0.8274,neutral,0.0,neutral,0.4695
+255d1a6c-76aa-4576-a2bd-bbf3fad092f3,Zahir Certification,2020-09-03,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+38ad3ad9-0325-4031-8235-d7769ba125da,Zahir Certification,2020-08-27,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+9d7b7e95-82ee-4fc6-877a-de79aae27de3,Zahir Certification,2020-08-11,1,critical,negative,gold_set_human_annotated,development,,,,,,
+a50d5d2f-5a4b-4902-81aa-e71847a3dbeb,Zahir Certification,2020-08-04,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+c4a9a27f-bdc0-4ac4-b086-7c441e238885,Zahir Certification,2020-08-04,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+ebcbd933-ccb3-4a73-a8c6-bd4676f92efb,Zahir Certification,2020-06-18,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+076836d6-4a27-4c86-a0d9-8e770d4a7a02,Zahir Certification,2020-06-06,1,critical,neutral,gold_set_human_annotated,test,negative,0.9386,negative,-7.0,neutral,0.3924
+50f3ebd1-5f0d-43c3-b87d-60ca1fe6e07d,Zahir Certification,2020-02-07,5,positive,positive,gold_set_human_annotated,test,positive,0.9942,neutral,0.0,positive,0.4419
+0808cfcf-ec82-4ef5-9495-eccc2501d693,Zahir Certification,2019-12-20,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+69970c60-87dc-435a-91cf-bf5852fa4bf6,Zahir Certification,2019-12-18,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+6d109975-7c27-417c-a978-97142aa29c0f,Zahir Certification,2019-12-16,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+f64bedb7-b3fc-4bcc-8ec6-2471acf79aa6,Zahir Certification,2019-12-09,1,critical,negative,gold_set_human_annotated,development,,,,,,
+1b291024-b324-400f-9cd1-a8e98556bcb1,Zahir Certification,2019-11-18,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+0d644482-84b1-4e48-b3d1-ddd91eec6584,Zahir Certification,2019-10-19,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+9da14361-7a3d-44d5-bef6-be831b8f506f,Zahir Certification,2019-09-22,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+09dbc0cd-e2aa-4341-a86f-86a29f129b69,Zahir Certification,2019-08-21,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+78aec4e6-b5f4-4410-85d8-22bb96d4f27a,Zahir Certification,2019-07-05,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+3a9966da-2de7-420b-8151-f18784bbfd03,Zahir Certification,2019-05-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e3736f0b-3a6d-49a4-aee9-fd31f63b0fba,Zahir Certification,2019-05-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+49cc211c-c790-4f58-be1f-96698c2090cf,Zahir Certification,2019-04-25,5,positive,positive,gold_set_human_annotated,development,,,,,,
+87fcccfd-963f-4ae7-b1f2-0ba2df4902d6,Zahir Certification,2019-04-24,5,positive,neutral,gold_set_human_annotated,test,neutral,0.9088,neutral,-2.0,neutral,0.4101
+7ba301d5-1d9b-4900-bd88-8a2d0579583e,Zahir Certification,2022-01-05,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+a4266577-d153-49ec-bc6b-ed3f2d641246,Zahir Certification,2021-08-07,2,critical,neutral,gold_set_human_annotated,test,positive,0.5774,negative,-15.0,neutral,0.5393
+75a64041-3228-4a1d-a574-c9c3deaa0899,Zahir Certification,2021-07-08,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+3eab7944-18f1-460f-80dd-7c0115276db1,Zahir Certification,2021-07-06,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+af0dc1cd-08fc-4501-a781-45c9482dbd46,Zahir Certification,2020-08-04,5,positive,neutral,gold_set_human_annotated,test,negative,0.8703,neutral,1.0,neutral,0.5628
+4d671d16-fcf0-4d27-bef5-cbe7065a2576,Zahir Certification,2019-10-23,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+a957553c-9ca5-4ba8-8c73-04dda15ea270,Zahir Certification,2018-11-12,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2c686835-0d5a-4fa5-8876-23f88c0bbab2,Zahir Online,2026-06-01,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+d73d3f07-c6b1-4947-9404-2efab03c1e0a,Zahir Online,2025-01-17,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+f7fc967c-400e-41f9-9750-f740ac1ab3d2,Zahir Online,2025-01-14,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+0e26fc8c-1186-4e3c-a7d7-71e1800a552e,Zahir Online,2024-09-26,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+218985f4-a9a7-4f72-b6f9-433fb5186f1a,Zahir Online,2024-09-19,5,positive,positive,gold_set_human_annotated,development,,,,,,
+54b4fe06-ae25-41a3-b904-b6dd734a58e0,Zahir Online,2023-12-06,5,positive,positive,gold_set_human_annotated,development,,,,,,
+91d562d2-129b-4f93-a4c4-fd9ffbe16be1,Zahir Online,2023-12-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2b5a33e4-3e1a-430f-8a02-6c9785a7fe21,Zahir Online,2023-12-04,1,critical,negative,gold_set_human_annotated,test,negative,0.9961,negative,-3.0,neutral,0.455
+0a032cd5-975f-4a55-840e-a0f7634a75a7,Zahir Online,2023-09-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+8ca4316c-db40-4546-8c87-c236b86e91b0,Zahir Online,2023-07-20,5,positive,positive,gold_set_human_annotated,development,,,,,,
+223707dc-7805-450d-b5fe-b1ebf6c45b65,Zahir Online,2022-10-09,1,critical,negative,gold_set_human_annotated,development,,,,,,
+0fa5f3ff-fc50-42f4-823a-8ffdd264527a,Zahir Online,2022-09-07,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+7bc01a05-ed87-4fe2-89b8-a323db16806a,Zahir Online,2022-08-23,5,positive,positive,gold_set_human_annotated,development,,,,,,
+90310bb9-777b-447d-8c58-24ff9dccbc2c,Zahir Online,2022-08-17,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+66dd1bd6-211f-4035-8464-600007645b83,Zahir Online,2022-08-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+bb86a5bf-3be3-4c72-80a9-44e7935d9a37,Zahir Online,2022-04-03,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+2c80d559-d8e1-47cb-91c6-4ad11f1357ff,Zahir Online,2021-12-15,2,critical,negative,gold_set_human_annotated,development,,,,,,
+af8d1611-da61-4817-957c-07c12a8c8a56,Zahir Online,2021-11-11,1,critical,negative,gold_set_human_annotated,development,,,,,,
+cf0e9669-0fc4-42cd-b527-078276da7119,Zahir Online,2021-10-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0f5de45f-ae56-47c9-a26b-8720deab6b96,Zahir Online,2021-08-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6cf32197-1b45-4789-bd26-764362064b4f,Zahir Online,2021-08-26,1,critical,negative,gold_set_human_annotated,development,,,,,,
+08cb383b-c459-4f09-b633-20430085049b,Zahir Online,2021-08-04,5,positive,positive,gold_set_human_annotated,test,positive,0.5156,neutral,0.0,negative,0.4736
+81299e61-c2fe-4573-bc62-5c5cc857a49d,Zahir Online,2021-06-09,3,neutral,positive,gold_set_human_annotated,test,positive,0.9931,negative,-42.0,positive,0.5563
+5b05492c-af24-4436-8bb0-7a374658a0f5,Zahir Online,2021-05-22,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+62f53537-4376-4221-ba52-81842057e2f3,Zahir Online,2021-03-29,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+b3e92dbf-5a9f-4424-92c2-333094257977,Zahir Online,2021-02-21,3,neutral,positive,gold_set_human_annotated,development,,,,,,
+53feddf3-8247-4312-9829-2d7b632833f6,Zahir Online,2021-02-10,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e94b18cf-16e9-40ab-8970-ebb2480c579a,Zahir Online,2020-11-12,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+b7cf21b4-60cc-469d-83a2-cc1fc3bf529b,Zahir Online,2020-08-31,1,critical,negative,gold_set_human_annotated,test,negative,0.9981,negative,-26.0,positive,0.3825
+7f66ced2-691f-4133-bc16-c89c6b8a52d1,Zahir Online,2020-07-06,1,critical,positive,gold_set_human_annotated,development,,,,,,
+b33f9095-f30c-44a9-8e18-5592b7b1b432,Zahir Online,2020-07-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+7d4e8b51-9901-4346-addc-19a6fc2892a6,Zahir Online,2020-06-26,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+fa249c65-d5e7-412e-a005-36adbe92b5d6,Zahir Online,2020-05-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+fa3e2da9-e252-4c2d-902b-4295c4f30510,Zahir Online,2020-05-01,5,positive,neutral,gold_set_human_annotated,test,negative,0.9636,negative,-3.0,neutral,0.42
+0b681ae7-f409-41d4-a37f-e66071c9f15d,Zahir Online,2020-04-14,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+e0c075ae-283d-48d9-b2a9-ebdbbb3d4146,Zahir Online,2020-04-04,2,critical,negative,gold_set_human_annotated,test,neutral,0.9406,neutral,-1.0,negative,0.5603
+57708b8f-422c-4ae8-8eb5-5743badfdc43,Zahir Online,2020-03-19,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+1f7fdc2d-a734-496e-9f7a-cd5166f5b753,Zahir Online,2020-03-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0ed38eed-538c-4e44-936d-b2e80d0850b2,Zahir Online,2020-02-14,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+eb185310-0b8a-4e55-8e81-326a1178cf95,Zahir Online,2019-11-16,5,positive,negative,gold_set_human_annotated,development,,,,,,
+7868cd67-ec51-4ae6-b4f7-dffaa0a77b1e,Zahir Online,2019-10-18,2,critical,negative,gold_set_human_annotated,test,negative,0.8583,negative,-14.0,neutral,0.4687
+d19b9208-018a-4390-9a2c-68fcce0e20c8,Zahir Online,2019-09-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+403dcd3f-dad0-49bd-b06e-a6cba764346c,Zahir Online,2019-07-22,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ec773aed-a85e-4af3-8e1a-790171a50d2c,Zahir Online,2019-07-21,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b36b92c6-24cb-4f46-bdcd-3219d08d057a,Zahir Online,2019-05-22,1,critical,negative,gold_set_human_annotated,development,,,,,,
+f671310b-78d8-4bde-89fc-2cd6a0471648,Zahir Online,2019-05-11,1,critical,negative,gold_set_human_annotated,development,,,,,,
+c267cf96-31e2-4d7a-9975-3416c568f15f,Zahir Online,2019-05-06,1,critical,negative,gold_set_human_annotated,development,,,,,,
+8a511d07-d4a8-4d32-b747-5e9ad8745591,Zahir Online,2019-05-05,1,critical,negative,gold_set_human_annotated,development,,,,,,
+cee08b60-77af-4df4-83d1-2a022bc2e495,Zahir Online,2019-03-09,1,critical,neutral,gold_set_human_annotated,test,negative,0.728,negative,-16.0,neutral,0.6443
+13845d73-d2d9-4906-b2b8-e0c1df38310b,Zahir Online,2019-03-05,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+ac34ccc9-b6e4-4899-afe3-bd00971992d1,Zahir Online,2019-01-25,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+bd27322a-8142-4613-8b9d-252f5b1975f2,Zahir Online,2019-01-19,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+4b4174bc-30dd-4293-8ae2-2a2f4d8cea5c,Zahir Online,2018-12-15,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c5b76604-321d-4adf-985f-67ae38632a8c,Zahir Online,2018-12-01,5,positive,positive,gold_set_human_annotated,development,,,,,,
+946afb50-e3f0-4a09-8b0d-82bf43abf831,Zahir Online,2018-11-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c2bb743c-73bd-4846-b755-9843d9b21176,Zahir Online,2018-10-26,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+004ef841-a125-4bac-8027-6ddbbdd9d32d,Zahir Online,2018-10-21,5,positive,positive,gold_set_human_annotated,test,positive,0.9916,negative,-8.0,positive,0.765
+06218857-1117-42b0-adfa-c1fd5a4b88a8,Zahir Online,2018-09-27,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+e7a0e804-7048-4503-a281-4617c36c61d3,Zahir Online,2018-08-30,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+2373d1cd-dfa2-4a3a-8d8a-80292e905968,Zahir Online,2018-08-23,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+d77fa9b7-6ff9-46b8-b26b-83e78cdc8f04,Zahir Online,2018-08-03,4,positive,neutral,gold_set_human_annotated,test,positive,0.9539,negative,-7.0,neutral,0.372
+03244de7-8261-4fef-8c10-2b3abddd1b44,Zahir Online,2018-06-15,5,positive,positive,gold_set_human_annotated,test,positive,0.9972,positive,5.0,positive,0.8426
+75de7c68-ed77-4487-9083-f5a34a322155,Zahir Online,2018-05-10,5,positive,positive,gold_set_human_annotated,test,positive,0.9956,neutral,-1.0,positive,0.5842
+cd539d44-30a8-4a65-8c19-92dd86ff4133,Zahir Online,2018-04-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1b02e8af-8d05-463e-bb85-b7f517110880,Zahir Online,2018-04-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9cfe975d-788e-4127-a2eb-80128c81c9b2,Zahir Online,2018-04-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2bdb2df7-5d99-4f88-b78d-71def03f8969,Zahir Online,2018-03-08,5,positive,positive,gold_set_human_annotated,development,,,,,,
+616e9369-78c8-41c7-b0ff-eb74c40b32f4,Zahir Online,2018-03-08,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9d90f8ac-f41d-4bb8-9706-b8317e47d4d0,Zahir Online,2018-03-08,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ef1eee92-e31e-41a3-b05f-69c53a359446,Zahir Online,2018-03-07,5,positive,positive,gold_set_human_annotated,development,,,,,,
+19c256c1-847f-4751-8e93-3d4954315c77,Zahir Online,2026-09-11,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+07409a77-5d99-464b-8ed6-1354509bfa7a,Zahir Online,2024-01-10,1,critical,negative,gold_set_human_annotated,development,,,,,,
+9596d052-ad08-4abf-a2fe-60fb39834a01,Zahir Online,2023-12-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e10e007d-0598-4c6e-bd6a-8cc3bae32a54,Zahir Online,2023-11-22,2,critical,negative,gold_set_human_annotated,test,neutral,0.7423,positive,3.0,positive,0.4493
+a1964478-6aeb-40fd-adb0-527bf66ae0db,Zahir Online,2023-09-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1c800b15-8aa1-42d0-b943-c9d208368a58,Zahir Online,2023-09-11,4,positive,negative,gold_set_human_annotated,development,,,,,,
+df04a006-147a-4f3e-91bd-5902c596321c,Zahir Online,2023-05-17,1,critical,negative,gold_set_human_annotated,development,,,,,,
+cb55d240-23a9-40a3-bde4-b04a24702ce4,Zahir Online,2022-11-26,1,critical,negative,gold_set_human_annotated,development,,,,,,
+1f19402c-6d54-4228-bbb4-8970e514d7ea,Zahir Online,2022-10-20,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+5d020dbf-5ca3-4e90-98d7-7e267f7ea169,Zahir Online,2022-07-12,1,critical,negative,gold_set_human_annotated,development,,,,,,
+06c058a4-df35-41e1-8668-389d19850fb7,Zahir Online,2022-04-12,1,critical,negative,gold_set_human_annotated,development,,,,,,
+b4371723-ea61-4dd7-a924-02ad2dd6f67c,Zahir Online,2022-03-24,1,critical,negative,gold_set_human_annotated,development,,,,,,
+a0464bd7-de98-4c8f-acd9-c46ad49b667e,Zahir Online,2021-11-06,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2f9a6b9a-3327-4539-82a6-792b89b180bc,Zahir Online,2021-09-02,1,critical,negative,gold_set_human_annotated,development,,,,,,
+1a04c9cc-b1a2-4d83-9fc5-832e35e49f41,Zahir Online,2021-02-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+44a2cb04-97cf-4671-b08f-9083526993c9,Zahir Online,2020-09-11,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+97e19b4d-8f3a-4d02-bf11-aefcddc86a0b,Zahir Online,2020-05-30,3,neutral,positive,gold_set_human_annotated,development,,,,,,
+f176a321-e1e4-4ada-a615-87f4a8f70925,Zahir Online,2019-10-29,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+b624f7c3-07b4-4965-9968-6da745afbcbc,Zahir Online,2019-03-29,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+77507f80-6266-4118-af36-bfb3880a622a,Zahir Online,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+35c164d1-eb56-4ce2-9f53-cb4756de6147,Zahir Online,2018-04-11,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+3aaa022c-1925-4285-bac4-38cf05f322b9,Zahir Online,2018-04-10,1,critical,neutral,gold_set_human_annotated,test,neutral,0.995,neutral,0.0,positive,0.5195
+354b176c-168a-4b6b-8a63-8dfa1770404a,Zahir Online,2018-03-28,5,positive,positive,gold_set_human_annotated,test,positive,0.9047,positive,4.0,positive,0.5698
+6b615612-d97c-4962-8568-bd78bd1a0e29,Zahir Online,2018-03-07,5,positive,positive,gold_set_human_annotated,test,neutral,0.8263,neutral,0.0,positive,0.6276
+35b6b830-75f5-452b-83f5-1c6b6f7a4af7,Zahir Online,2018-03-07,5,positive,positive,gold_set_human_annotated,test,positive,0.9878,positive,4.0,positive,0.6102
+b8a803b8-c298-406b-9970-a7deae7332a3,Zahir Online,2018-02-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e61e8874-431f-42cd-b82a-089929860267,Zahir Online,2018-02-08,5,positive,positive,gold_set_human_annotated,development,,,,,,
+7988fc31-d94e-44ab-9b09-a0d078749838,Zahir Online,2018-02-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6ea73c7e-84dd-427c-9661-0e0ebe3b2919,Zahir Simple Start,2023-02-01,1,critical,negative,gold_set_human_annotated,test,negative,0.9973,negative,-8.0,negative,0.4315
+04c14e36-2027-4e63-836b-aaf22ba5c0d0,Zahir Simple Start,2022-03-04,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+65fcc3d5-a3f3-4ac3-b106-b922359bdf6c,Zahir Simple Start,2022-02-12,5,positive,positive,gold_set_human_annotated,development,,,,,,
+71ca26c0-2490-4291-a0f5-7513986145d1,Zahir Simple Start,2022-01-23,5,positive,positive,gold_set_human_annotated,development,,,,,,
+fbe7e919-082b-4b24-ad0e-39942095e7fc,Zahir Simple Start,2021-07-04,1,critical,negative,gold_set_human_annotated,development,,,,,,
+67113fe7-7c32-42e3-8f8a-c095109cdcdc,Zahir Simple Start,2020-12-19,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a92b233d-4659-4067-8967-f653cae2f732,Zahir Simple Start,2020-11-03,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+a78d9ca2-bbf8-4938-b101-09172846e28d,Zahir Simple Start,2020-05-09,5,positive,neutral,gold_set_human_annotated,test,neutral,0.7907,negative,-3.0,neutral,0.4113
+572d124f-fb68-4e20-b1e9-08814feefd0e,Zahir Simple Start,2020-05-07,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+99406b3f-5798-4d78-9800-ccecb16920d2,Zahir Simple Start,2020-04-21,5,positive,neutral,gold_set_human_annotated,test,neutral,0.8505,negative,-15.0,neutral,0.6597
+567dbc7a-69e1-428d-8740-d20f00027067,Zahir Simple Start,2020-02-06,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+4f6a1d77-2b88-4073-ab1b-d6402c785fa2,Zahir Simple Start,2020-01-06,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+7b3229c9-ffd4-4b0f-be9e-ef710ff22a78,Zahir Simple Start,2019-11-23,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+bc54a6b3-8c74-4c6d-9663-d68e5d3d595d,Zahir Simple Start,2019-10-21,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+249c30bf-c0db-4cd9-b930-2a365ee9e1ec,Zahir Simple Start,2019-09-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b8847cbc-0dbb-4791-9781-db03d7812e46,Zahir Simple Start,2019-08-26,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+cd830e65-7788-4a2e-a6c3-695355d17d9b,Zahir Simple Start,2019-08-26,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a7b339b1-e27c-4383-b2b3-8175b18c6ffe,Zahir Simple Start,2019-08-15,1,critical,negative,gold_set_human_annotated,development,,,,,,
+f065b515-e34b-429d-ab33-2784f44db8dc,Zahir Simple Start,2019-07-10,5,positive,positive,gold_set_human_annotated,development,,,,,,
+de6efc58-f865-40af-b550-7d1a6da309c0,Zahir Simple Start,2019-05-11,1,critical,negative,gold_set_human_annotated,development,,,,,,
+2994e7df-65dc-4467-8602-8fb09f4d6a2c,Zahir Simple Start,2019-05-05,1,critical,negative,gold_set_human_annotated,development,,,,,,
+42dc3c2e-b66b-4d60-8f1b-a2b9931b7e64,Zahir Simple Start,2019-04-10,1,critical,negative,gold_set_human_annotated,development,,,,,,
+aae35c02-ad94-42df-b3e3-b4c452e870bf,Zahir Simple Start,2019-04-04,4,positive,neutral,gold_set_human_annotated,test,neutral,0.9807,positive,6.0,neutral,0.6084
+646ebf91-d39a-4f48-8992-c151e910511a,Zahir Simple Start,2019-04-04,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+737cb85e-0bfc-46e1-93f0-b4d7f24be164,Zahir Simple Start,2019-03-24,2,critical,negative,gold_set_human_annotated,test,negative,0.9537,negative,-16.0,negative,0.3801
+e4754d42-2523-4014-8d13-17c41597fd1b,Zahir Simple Start,2019-03-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a2e2bb80-f46c-4cd9-9a93-1d57217f67da,Zahir Simple Start,2019-02-19,1,critical,negative,gold_set_human_annotated,development,,,,,,
+7746905f-df69-4e49-9f2a-c442c257fe9e,Zahir Simple Start,2019-01-31,5,positive,positive,gold_set_human_annotated,test,neutral,0.7922,positive,3.0,positive,0.4082
+6459a05d-5020-44e9-b5f9-948a2febdd94,Zahir Simple Start,2018-12-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1883da3c-dbf8-43e7-a239-5917920c53e9,Zahir Simple Start,2018-12-04,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+6d878052-0bb9-49e0-b9bf-176de1fc90a2,Zahir Simple Start,2018-12-01,5,positive,positive,gold_set_human_annotated,development,,,,,,
+037da5e4-9fbf-48b2-bc97-f190a71b1b60,Zahir Simple Start,2018-11-16,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+a894f804-0b9c-40b1-b375-e34f7ba60d41,Zahir Simple Start,2018-11-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b34d355a-41cc-42de-a245-d192fe32ea1f,Zahir Simple Start,2018-11-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ec6cdcfe-03e7-4ec4-8597-6ee49ac388de,Zahir Simple Start,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b280ec5e-77eb-4a41-bce5-b36e875432c6,Zahir Simple Start,2018-10-29,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+13390889-ac2b-4ec8-b522-8f5330a7b8b0,Zahir Simple Start,2018-10-24,5,positive,positive,gold_set_human_annotated,test,positive,0.9941,negative,-23.0,positive,0.772
+dc64e864-83ba-4f9c-82cb-c1573e54e31c,Zahir Simple Start,2018-10-20,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+071ff80b-1380-4dc1-ae8a-9635d55b62ad,Zahir Simple Start,2018-10-19,5,positive,positive,gold_set_human_annotated,development,,,,,,
+83401f5a-b908-432b-a18e-7e888d1a11dc,Zahir Simple Start,2018-10-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3af42e17-5e06-4b88-9b87-89059fa0eda2,Zahir Simple Start,2018-10-02,1,critical,negative,gold_set_human_annotated,development,,,,,,
+34a9ea22-0790-4cbe-b52d-00c5ee18c4b6,Zahir Simple Start,2018-10-01,1,critical,negative,gold_set_human_annotated,development,,,,,,
+7ea2ffdc-5b07-49e4-bf41-561b6c7acb28,Zahir Simple Start,2018-09-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+d8ef0337-e031-4727-bfac-5359ca52bea2,Zahir Simple Start,2018-09-23,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+dfd75e8e-010a-46f9-b33a-5a76fc00767c,Zahir Simple Start,2018-09-22,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+44a2616e-8fc6-4203-af9e-2353030d4ef8,Zahir Simple Start,2018-09-22,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+6a331ee7-27d3-4680-b1ea-f93ddef5e2f4,Zahir Simple Start,2018-09-21,5,positive,positive,gold_set_human_annotated,development,,,,,,
+eba16db4-db04-4927-907a-857ed4007f0f,Zahir Simple Start,2018-08-29,5,positive,positive,gold_set_human_annotated,development,,,,,,
+aaf321fd-9942-4fb9-b447-b45ed5f873d9,Zahir Simple Start,2018-08-27,5,positive,positive,gold_set_human_annotated,test,positive,0.985,positive,7.0,positive,0.5878
+ac190c16-0225-460b-9b1c-3391d315619f,Zahir Simple Start,2018-08-27,1,critical,neutral,gold_set_human_annotated,test,neutral,0.8711,negative,-17.0,negative,0.6669
+bb81bbcf-4c89-4fc9-9a4c-4725d59e2e61,Zahir Simple Start,2018-08-15,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+47fbc759-ddc5-419d-92a2-d342e2617433,Zahir Simple Start,2018-08-13,3,neutral,neutral,gold_set_human_annotated,test,positive,0.9859,negative,-6.0,negative,0.4956
+f4bb03b4-44b4-47fa-9c4a-65b06526d9d7,Zahir Simple Start,2018-08-13,4,positive,positive,gold_set_human_annotated,development,,,,,,
+3f36bf80-544f-4b48-852a-a7f49f133c1e,Zahir Simple Start,2018-08-01,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+12346ffc-40a8-423e-9561-9c3927832e89,Zahir Simple Start,2018-07-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1c6162b3-d5c5-4614-8c31-eefd90465ec3,Zahir Simple Start,2018-07-27,5,positive,positive,gold_set_human_annotated,development,,,,,,
+4e0105e4-896a-49ed-9664-43d2cb9da223,Zahir Simple Start,2018-07-15,5,positive,positive,gold_set_human_annotated,test,neutral,0.8365,positive,8.0,neutral,0.442
+6c0c2e74-2293-434f-98c4-d69a7437c360,Zahir Simple Start,2018-07-14,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+3961c989-1ff1-4752-899c-7185c55caef0,Zahir Simple Start,2018-06-25,3,neutral,positive,gold_set_human_annotated,test,positive,0.9971,positive,5.0,positive,0.6768
+9b0d7ac8-91f6-4091-8aff-61be6396d236,Zahir Simple Start,2018-06-11,2,critical,neutral,gold_set_human_annotated,test,negative,0.6158,negative,-49.0,neutral,0.3828
+10932856-6e17-43fc-a0ce-6259c340004e,Zahir Simple Start,2018-06-03,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+537025e7-8561-4f15-ae51-dd4fb08bc454,Zahir Simple Start,2018-05-29,1,critical,positive,gold_set_human_annotated,development,,,,,,
+bad40047-03f0-40e6-895b-4186872230fe,Zahir Simple Start,2018-05-27,5,positive,positive,gold_set_human_annotated,development,,,,,,
+721e81d8-d2a8-4a4d-9543-0d2cdc027f46,Zahir Simple Start,2018-05-26,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+80d5af35-923d-4bf3-b660-62cde9b05134,Zahir Simple Start,2018-05-25,5,positive,positive,gold_set_human_annotated,test,positive,0.7842,negative,-26.0,neutral,0.3939
+bdf08598-11e1-4260-a1b3-2ddea4e1a506,Zahir Simple Start,2018-05-18,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ffbeb653-9d2e-482d-9706-3bd69f2ce747,Zahir Simple Start,2018-05-18,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+43df9e79-3e7a-4e47-9c09-7a49874215d6,Zahir Simple Start,2018-05-13,3,neutral,neutral,gold_set_human_annotated,test,neutral,0.7364,negative,-11.0,negative,0.5523
+461f02bf-c917-4fa5-a7c9-23407df40b42,Zahir Simple Start,2018-05-12,5,positive,neutral,gold_set_human_annotated,test,neutral,0.9195,negative,-5.0,positive,0.4014
+44039646-87b8-4ada-93df-b001b624c311,Zahir Simple Start,2018-05-10,5,positive,positive,gold_set_human_annotated,development,,,,,,
+538920dc-d1b6-4d55-9a49-6cbba5725e5b,Zahir Simple Start,2018-05-03,5,positive,negative,gold_set_human_annotated,development,,,,,,
+5469f664-6b82-4012-89b4-482c2b8e5f03,Zahir Simple Start,2018-04-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+d7131eee-d907-4f81-a060-ee1632ddaa59,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b581e39c-6fa4-40a8-b09c-4af1c82c2bb2,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+90f5369e-da4f-46ea-b530-d9666c26b8fd,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2ba94237-e958-4fd3-80b0-c23f937402cb,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a0498e8f-f7bd-433a-a84a-74f0f5c85b26,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3ede1a38-f077-4443-b04f-4849cc985f48,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+73df5a49-7aa1-41ab-a6c7-69c601ae7e57,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+cc346b6b-c1ff-407a-8923-25b9e263812b,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+80ab7a5b-861d-442f-9f3c-741f80cee971,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,test,positive,0.997,negative,-5.0,positive,0.7963
+f9a5f070-5b63-400c-a7b8-86f1ef9750b6,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+605eb641-ad72-4310-85a0-3a7ea9d4711e,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+4adea14d-a945-4375-b75e-a38403a90776,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,test,positive,0.9893,negative,-12.0,positive,0.7307
+e4b468ab-2713-480f-aa84-0e3f85064276,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+072bcf12-fd97-4936-a487-e40407274e51,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+ce7f99fa-45ef-43f1-a5ba-89fc16fd8d3c,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c2f2044c-6691-4f13-ae74-874c7efd1768,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e463c867-d4a7-4863-877c-9a4c10a254a9,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3ea9a9ea-db12-4b84-909b-27ea49f2cabb,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2f60e4c1-b393-4a70-99c9-43218d954eb5,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,test,positive,0.9558,negative,-9.0,positive,0.6353
+8bafed62-e82a-4e0d-b38d-0305015d578c,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,test,positive,0.9946,neutral,0.0,positive,0.4419
+8e5ed161-25aa-42bc-93f3-936fced9123b,Zahir Simple Start,2018-04-15,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b3eadc67-4cce-45b9-9f48-9108680dff42,Zahir Simple Start,2018-04-14,5,positive,positive,gold_set_human_annotated,test,positive,0.9971,neutral,-2.0,positive,0.6041
+11fe9a69-016a-4ebd-9ef5-36d5be9e3b50,Zahir Simple Start,2018-04-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2fbd9d5e-8c6e-4507-9a40-1a75c61c8610,Zahir Simple Start,2018-04-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1e79a592-21f0-48ed-921d-1d9e379d0568,Zahir Simple Start,2018-04-11,5,positive,positive,gold_set_human_annotated,test,positive,0.9961,negative,-4.0,positive,0.6212
+e4dc2e12-6e36-407d-a33a-c52c9505fb5a,Zahir Simple Start,2018-04-07,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+80c596bd-7d78-4cdd-8121-a23c97bf6e26,Zahir Simple Start,2018-04-05,5,positive,positive,gold_set_human_annotated,test,positive,0.9919,negative,-12.0,positive,0.7466
+9f03df26-4647-4666-990a-aa8b7d1ae22c,Zahir Simple Start,2018-04-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9945,negative,-11.0,positive,0.6026
+7bfbcbc7-6b8d-4282-9ed0-c07405a30012,Zahir Simple Start,2018-03-23,5,positive,positive,gold_set_human_annotated,development,,,,,,
+aa6195bc-6553-4b50-84bd-92f1a2d7ba54,Zahir Simple Start,2018-03-21,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+bba50e4d-29fe-4fbd-81ba-552b032eee94,Zahir Simple Start,2018-03-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1fa93c2f-65bb-4324-a070-71b7d746c8e7,Zahir Simple Start,2018-03-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9d23ad5f-b0c5-4b37-9596-9798e9da9e78,Zahir Simple Start,2018-03-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2fa3301a-8eba-41b3-8d05-beedfb319df9,Zahir Simple Start,2018-02-21,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c549d99f-cc88-4e35-8a64-c1764b65fe89,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+11f0d59b-d1f6-41b5-8d93-35e7053eb69d,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+55f11b8b-3da4-44c8-ad72-479fb5a26ba3,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,test,positive,0.997,neutral,-1.0,positive,0.6927
+ede6fa7f-5f99-400a-828b-580f838b4d61,Zahir Simple Start,2018-01-27,5,positive,positive,gold_set_human_annotated,development,,,,,,
+98f0d278-ae28-4be0-aa10-91694d54bc35,Zahir Simple Start,2021-12-30,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1f827fc7-9320-45fd-ae0e-a2b7ae4307de,Zahir Simple Start,2020-06-28,1,critical,positive,gold_set_human_annotated,development,,,,,,
+12e5927d-73c6-4f08-88dc-2b1d28a86ea5,Zahir Simple Start,2019-12-18,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0fe28971-0b29-4828-87ef-bec7da231ea1,Zahir Simple Start,2019-11-30,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+62ff1d03-918b-47a2-bbc8-227d31dc5193,Zahir Simple Start,2019-11-23,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+f9d1d4c8-7f82-40bc-aba9-e516f21c086e,Zahir Simple Start,2019-10-23,5,positive,positive,gold_set_human_annotated,test,positive,0.9915,positive,5.0,positive,0.6554
+5b7246e5-94b0-486f-bbf3-df6292fda8cd,Zahir Simple Start,2019-10-02,1,critical,negative,gold_set_human_annotated,test,negative,0.9968,negative,-6.0,negative,0.5441
+eae873ca-6f50-4d37-9700-db8a4dfb21ed,Zahir Simple Start,2019-09-16,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+4fa200e6-f15f-4075-95f9-9fb111fa7a20,Zahir Simple Start,2019-09-11,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+cc4c45ad-ee88-44e4-b643-07ae879553ab,Zahir Simple Start,2019-07-21,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+a61dc948-b1b1-4546-9ee7-a98d7a9e87ed,Zahir Simple Start,2019-06-12,1,critical,negative,gold_set_human_annotated,test,neutral,0.7372,neutral,-2.0,neutral,0.4072
+eacf3af0-001c-412a-bdaf-2d06e6299933,Zahir Simple Start,2019-05-28,3,neutral,neutral,gold_set_human_annotated,test,neutral,0.8922,positive,3.0,neutral,0.5747
+9a14f5e1-9d5b-40eb-ad9c-e604a6801c22,Zahir Simple Start,2019-05-13,2,critical,neutral,gold_set_human_annotated,development,,,,,,
+d311237f-3875-4c52-b7e0-d55790c4c7a8,Zahir Simple Start,2019-05-12,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+93e0047c-10b6-4ef8-afd7-b948994b112b,Zahir Simple Start,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9948,negative,-5.0,positive,0.8609
+f1cc141d-5596-4cf4-b145-a258a123e964,Zahir Simple Start,2018-10-21,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+87ed5ee2-e7b6-4b5f-8b46-fa2a58035d98,Zahir Simple Start,2018-10-11,3,neutral,positive,gold_set_human_annotated,development,,,,,,
+ec05b4f9-88b2-4fea-b240-c429bbf2079b,Zahir Simple Start,2018-10-08,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+2b3d03cd-4b18-429f-bd38-4a9237d5c3b6,Zahir Simple Start,2018-10-05,5,positive,positive,gold_set_human_annotated,test,positive,0.9923,positive,4.0,positive,0.5888
+f1eef421-efb0-4793-ad21-0628a4a809a8,Zahir Simple Start,2018-10-03,5,positive,positive,gold_set_human_annotated,test,negative,0.9966,neutral,-1.0,neutral,0.4423
+678716a1-c228-46f8-9a9e-64238c52fa31,Zahir Simple Start,2018-08-15,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1a32c429-fcb1-49a9-b281-db9a067aa923,Zahir Simple Start,2018-07-29,1,critical,negative,gold_set_human_annotated,development,,,,,,
+9ea273d6-7d2c-4f02-a6b6-80b9809ad341,Zahir Simple Start,2018-07-18,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e71cfac7-419f-4cdc-b9e2-e7b32b98dadc,Zahir Simple Start,2018-07-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+1c541fd3-73da-4a73-b7cf-e4b911d606bb,Zahir Simple Start,2018-05-06,5,positive,positive,gold_set_human_annotated,development,,,,,,
+22d998f1-d838-4aa3-b9ef-dd6d4fa84351,Zahir Simple Start,2018-05-01,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+4df8d032-96c4-4c79-933e-406cb5461cf9,Zahir Simple Start,2018-04-29,5,positive,positive,gold_set_human_annotated,development,,,,,,
+8f6f0d10-4be1-47aa-a711-18e4c02f4b72,Zahir Simple Start,2018-04-28,1,critical,negative,gold_set_human_annotated,development,,,,,,
+29d96216-d8e6-4c49-90ac-0571ffa99539,Zahir Simple Start,2018-04-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0c23b1ea-2c46-4da0-8033-9de483971811,Zahir Simple Start,2018-04-18,5,positive,negative,gold_set_human_annotated,development,,,,,,
+b6837eaf-f0ef-47c0-b344-2b71554ae69b,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+42ae0ecb-8cfa-4b76-a8df-0c8f45cd7fe4,Zahir Simple Start,2018-04-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+9ff5f999-3c2e-49ab-a7a6-1536afddf218,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a2ea9d78-5824-4f62-8f75-dbea1730ba52,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+520f58dd-2c2b-4d2d-ae45-d8b06e30a19c,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e2067f45-a735-4fb1-b06f-e2468ed44c50,Zahir Simple Start,2018-04-16,5,positive,positive,gold_set_human_annotated,test,positive,0.9605,positive,3.0,positive,0.449
+ef37095c-caca-4c94-b120-89f798913a82,Zahir Simple Start,2018-04-15,5,positive,positive,gold_set_human_annotated,development,,,,,,
+f723e5fc-edb2-4487-86a3-7ff77d0ffb8a,Zahir Simple Start,2018-04-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6a0e7592-6fbc-4681-8f92-a75b192f78bf,Zahir Simple Start,2018-04-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+26987eb6-8525-4d35-8b0b-93096392a260,Zahir Simple Start,2018-04-11,5,positive,positive,gold_set_human_annotated,test,positive,0.9917,negative,-13.0,positive,0.9016
+7bcaa67e-c1e2-4049-ac4b-b39b6508fad2,Zahir Simple Start,2018-04-11,5,positive,positive,gold_set_human_annotated,development,,,,,,
+59f09fe4-8126-486c-bd57-c1c6f58b8f19,Zahir Simple Start,2018-02-20,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6f935c39-ad15-4230-b293-a7e4a34a5e40,Zahir Simple Start,2018-01-31,5,positive,positive,gold_set_human_annotated,development,,,,,,
+d425986f-2a14-4795-b1ab-608cee2c3dc0,Zahir Simple Start,2018-01-30,5,positive,positive,gold_set_human_annotated,development,,,,,,
+8202a2f6-5edf-4e0e-9c25-1aad94336454,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+cfd65cb9-b1b7-4bc6-b624-431d93fb87ea,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c8114245-8cec-418f-a009-f777d937132a,Zahir Simple Start,2018-01-28,5,positive,positive,gold_set_human_annotated,development,,,,,,
+cbffd87a-4fe7-4aff-8d44-600be5fbc540,Zahir Simple Start,2018-01-27,5,positive,positive,gold_set_human_annotated,test,positive,0.591,positive,6.0,positive,0.7424
+1616eb33-e1fc-4a27-bb88-a74cbfbd417c,Zahir Simple Start,2018-01-27,5,positive,positive,gold_set_human_annotated,development,,,,,,
+238479a5-87ee-4cac-b3e3-d3005cf8f643,Zahir Simple Start,2018-01-26,5,positive,positive,gold_set_human_annotated,development,,,,,,
+bf20178d-8ce8-418f-94a4-206f9f62580a,POS X,2024-07-30,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+456bdf4c-4d83-4187-aafa-d219ce0cb938,POS X,2024-07-27,1,critical,negative,gold_set_human_annotated,development,,,,,,
+975f8af1-60b1-401c-b92b-f5de53098795,POS X,2024-07-24,5,positive,positive,gold_set_human_annotated,development,,,,,,
+82f3fb15-e550-4b60-aea1-6cf3801a7f95,POS X,2023-07-07,1,critical,negative,gold_set_human_annotated,development,,,,,,
+a185f908-b93c-4bf4-870a-120a8fcf3ac0,POS X,2023-02-01,1,critical,negative,gold_set_human_annotated,development,,,,,,
+8c978ac0-6ce5-4662-a911-037370e13f96,POS X,2022-10-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+5050413b-6cef-498c-804e-890f1e5c78a9,POS X,2022-04-24,1,critical,negative,gold_set_human_annotated,development,,,,,,
+40d64280-d94d-4200-ba12-2e086c5f32bf,POS X,2021-11-01,5,positive,positive,gold_set_human_annotated,development,,,,,,
+60484efd-5b1d-4169-bd52-cc9bbbdfd55e,POS X,2021-10-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+151e314a-b1cc-4309-996c-e7dbb8495804,POS X,2021-09-30,1,critical,negative,gold_set_human_annotated,test,negative,0.9975,negative,-24.0,neutral,0.3642
+388ffbb5-df11-45ec-9acf-aa942bf32e6e,POS X,2021-04-22,1,critical,negative,gold_set_human_annotated,development,,,,,,
+2f7b7926-597a-4a83-a097-71ea88d70f8c,POS X,2021-03-14,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+e84c07ef-198d-4283-9911-b49644c265fa,POS X,2021-02-27,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+23e58527-959b-44d9-8836-f379afeb2f48,POS X,2020-08-04,2,critical,negative,gold_set_human_annotated,development,,,,,,
+73cd3372-7378-4cea-a711-bc35a3a382d1,POS X,2020-02-26,5,positive,positive,gold_set_human_annotated,development,,,,,,
+fc3afb7d-5dc7-49fb-871a-d189a09de9af,POS X,2019-11-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3eb4299e-88d6-495c-80fb-53be1b44384f,POS X,2019-11-08,3,neutral,neutral,gold_set_human_annotated,development,,,,,,
+0cfd53fa-4030-4439-b00e-373f134a9009,POS X,2019-10-30,3,neutral,neutral,gold_set_human_annotated,test,neutral,0.8788,neutral,-1.0,neutral,0.571
+d9bf2c11-1ed2-488f-96a5-bab727c4ea1c,POS X,2019-10-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+d7c3e691-5303-4b9f-b6fe-9b5493ed4431,POS X,2019-09-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+946c296b-bbcf-472c-bac5-0851c9b3587c,POS X,2019-08-20,5,positive,positive,gold_set_human_annotated,test,positive,0.5121,neutral,-1.0,positive,0.3992
+2c5a1a0f-0b47-4f57-b4fe-473c76392213,POS X,2019-07-22,2,critical,negative,gold_set_human_annotated,development,,,,,,
+edd408c6-f9d4-4e53-9095-5db59b0830d5,POS X,2019-07-16,1,critical,negative,gold_set_human_annotated,test,negative,0.9939,negative,-20.0,negative,0.595
+349093a7-686f-4a63-a981-0fa524982e87,POS X,2019-07-16,5,positive,positive,gold_set_human_annotated,test,positive,0.9972,neutral,0.0,positive,0.7137
+93c1f4e1-f86f-4a81-8551-080fc0acb7ff,POS X,2019-07-10,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3828c1dd-3ee5-4017-9504-d78cbbade65f,POS X,2019-05-23,5,positive,positive,gold_set_human_annotated,test,positive,0.9957,neutral,0.0,positive,0.4419
+3e75cc90-e523-4f7a-bf28-9287af1c2bb9,POS X,2019-04-19,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+540d1352-c8e4-441d-8aa1-0e53a9b0e361,POS X,2019-04-18,2,critical,negative,gold_set_human_annotated,development,,,,,,
+d245419e-db15-4106-871b-fe1b65bcee6b,POS X,2019-03-29,4,positive,positive,gold_set_human_annotated,test,positive,0.9651,negative,-19.0,negative,0.4763
+897daa6e-fbb3-4294-b1ae-5e4600b3de3c,POS X,2019-02-28,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+436060c1-9089-4021-90a0-52d284678f8e,POS X,2019-01-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+62233811-04bc-490e-b6a6-98cd7fcfc086,POS X,2018-12-18,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b217fe63-6e0d-46cc-bcf4-6fac9f46f483,POS X,2018-12-17,4,positive,positive,gold_set_human_annotated,development,,,,,,
+e7469b9a-edb1-4bfd-9da5-998b0db718d3,POS X,2018-12-13,5,positive,positive,gold_set_human_annotated,development,,,,,,
+c7aa7517-5c0e-485f-ab0f-3fd593d58429,POS X,2018-12-09,5,positive,positive,gold_set_human_annotated,development,,,,,,
+3ce0bab9-59b5-449b-b096-eb7e464581f8,POS X,2018-12-07,5,positive,positive,gold_set_human_annotated,development,,,,,,
+95422f6e-b3a0-404a-aac4-1889ee676734,POS X,2018-12-06,4,positive,positive,gold_set_human_annotated,development,,,,,,
+29744844-1b78-45fe-aa15-0d961b99f16b,POS X,2018-11-16,2,critical,negative,gold_set_human_annotated,development,,,,,,
+cba29e4c-beb1-4692-ac19-588c81ea1992,POS X,2018-11-14,5,positive,positive,gold_set_human_annotated,development,,,,,,
+07172d3e-e0e2-4d4f-84e2-5ac714c1ebf1,POS X,2018-11-10,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+5ddda4a1-2467-4fac-ac7a-4b65f7b447d6,POS X,2018-11-08,5,positive,positive,gold_set_human_annotated,development,,,,,,
+054070f0-3a36-464f-ae63-03bf90a3304d,POS X,2018-11-07,5,positive,positive,gold_set_human_annotated,development,,,,,,
+4f8eb58b-a4b8-4c02-bfb3-b82a720ae098,POS X,2018-11-05,5,positive,positive,gold_set_human_annotated,test,neutral,0.9914,negative,-10.0,positive,0.4808
+e870a49c-05a5-487d-9ea0-51e1418f6041,POS X,2018-11-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+57a9d7b2-06ac-40c2-9065-29523fe3e741,POS X,2018-11-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+4cc372dd-7f84-4085-b56e-fcbeb830f23c,POS X,2018-11-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+dd74b8ab-3222-4c5e-a5f4-f43bf4da7eb7,POS X,2018-11-04,5,positive,positive,gold_set_human_annotated,development,,,,,,
+afb8b482-2855-42a1-b676-0f2d1a684b31,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9906,negative,-15.0,positive,0.8174
+6cae4e15-c701-4e42-90e7-63d15455354b,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0da3c9bd-a2b4-4300-ad49-b2a1aa5da791,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a3bfe7c3-6def-4482-b6ab-759d1c5d5ab5,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+159bde6a-6a7e-4a9a-a807-18fcb0955da8,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+afd2ffab-6af5-4e97-a9cc-f900782c2482,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+078ffadd-66d7-41a0-8747-6e239378a4fd,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9944,negative,-10.0,positive,0.8239
+ade15351-60b2-42fb-bec5-ba86a8dadca0,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+abb09a27-d437-4070-8144-0516190d6f34,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e3cc31e8-3eab-40a6-9761-d6f1f6f2f2c8,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+00c68053-0941-4d57-a9b5-e1c401dbf7db,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6a9f9ca2-61c0-4cf6-9d34-76f890caf8d9,POS X,2023-07-30,5,positive,positive,gold_set_human_annotated,development,,,,,,
+125b2028-88a9-410e-9ac5-2453866fcc5e,POS X,2022-05-31,1,critical,negative,gold_set_human_annotated,test,negative,0.9979,positive,8.0,neutral,0.6342
+0059b1b2-49fe-4304-8538-3ffb51f51dab,POS X,2021-08-14,3,neutral,negative,gold_set_human_annotated,test,negative,0.6698,negative,-15.0,negative,0.37
+5f3088d5-3e8c-410a-ba31-c243d5ea0dcd,POS X,2021-05-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+a2e24a37-bc11-459f-8706-14059bd84513,POS X,2021-01-25,1,critical,negative,gold_set_human_annotated,development,,,,,,
+17911f32-12a9-4129-867a-7ab48a7baa9d,POS X,2020-12-20,5,positive,positive,gold_set_human_annotated,development,,,,,,
+0f180c18-47e8-4842-9a5f-0487b393d400,POS X,2020-06-14,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+71e6e926-9097-4a92-85d8-1c8904122000,POS X,2019-07-21,4,positive,neutral,gold_set_human_annotated,test,neutral,0.7882,negative,-8.0,neutral,0.5742
+176a3b1f-fa46-411e-9378-c407213c0311,POS X,2019-06-08,1,critical,neutral,gold_set_human_annotated,development,,,,,,
+2ca47567-0b3c-4d58-9940-ff109a548e03,POS X,2019-03-15,4,positive,neutral,gold_set_human_annotated,development,,,,,,
+64dbdb3f-f27a-431b-8283-557dfc1b640d,POS X,2019-01-16,3,neutral,negative,gold_set_human_annotated,development,,,,,,
+f3c4e305-48ea-4ce4-b4b0-b44b75d39626,POS X,2019-01-10,1,critical,negative,gold_set_human_annotated,development,,,,,,
+45daef85-1135-4fcf-8d8c-654475ff0952,POS X,2018-12-17,5,positive,positive,gold_set_human_annotated,development,,,,,,
+134ea99f-0654-46fb-9946-894c34c18d0d,POS X,2018-11-23,5,positive,positive,gold_set_human_annotated,test,positive,0.8356,neutral,-2.0,neutral,0.4046
+b63e1521-7424-41c2-8295-2afc8e526bee,POS X,2018-11-16,5,positive,positive,gold_set_human_annotated,development,,,,,,
+5c62d694-fb57-49b3-be6c-13e18f249465,POS X,2018-11-05,5,positive,positive,gold_set_human_annotated,development,,,,,,
+6fe313b0-bb30-4524-8fb5-a3feb1b187aa,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9972,neutral,0.0,positive,0.7137
+f3fb1926-1582-45d2-8336-b8f282a0475d,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+2ccfd400-df77-4975-ac22-f77505281d86,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9495,neutral,-1.0,positive,0.6528
+4fcd557d-ea7e-4207-bafb-5d3d8d7210c9,POS X,2018-11-03,5,positive,neutral,gold_set_human_annotated,development,,,,,,
+86123975-7c4e-4259-a222-e2b3f5f22b94,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9868,positive,3.0,positive,0.568
+50589a56-8912-42a2-bef1-3d6d2ec2f105,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+151ecd28-5c70-4552-b698-046e29eb82be,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9954,positive,3.0,positive,0.6811
+3efe922d-ea6b-4d1e-8ad5-d15ef63ed3ba,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,development,,,,,,
+97a4aa76-d8c3-4a9e-81c3-72d11f34b5dc,POS X,2018-11-03,5,positive,positive,gold_set_human_annotated,test,positive,0.9937,negative,-19.0,positive,0.7511
+a28a8680-acfa-41f6-af48-1ba0a5745535,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+e96184a5-2d13-46b6-b3a4-6876e5491d78,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+4580de6a-30a7-4bb7-a471-b73c1f473087,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,
+b68b4d56-3c64-42ab-9bc8-12748a12bfbe,POS X,2018-11-02,5,positive,positive,gold_set_human_annotated,development,,,,,,

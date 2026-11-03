@@ -1,0 +1,5 @@
+﻿content_type,post_count,post_share_pct,total_likes,mean_likes,median_likes,std_likes,min_likes,max_likes,total_comments,mean_comments,median_comments,std_comments,min_comments,max_comments,total_interactions,mean_interactions,median_interactions,std_interactions,iqr_interactions,min_interactions,max_interactions,colab_posts_count,organic_posts_count
+video/reel,44,80.0,12040,273.64,55.0,652.59,1,3191,432,9.82,0.5,45.96,0,306,12472,283.45,61.5,684.25,137.5,1,3217,21,23
+carousel,8,14.55,588,73.5,33.0,107.45,4,331,70,8.75,10.0,6.78,0,18,658,82.25,45.0,108.4,40.0,4,342,5,3
+image,3,5.45,15,5.0,5.0,1.0,4,6,2,0.67,0.0,1.15,0,2,17,5.67,5.0,2.08,2.0,4,8,0,3
+Total / Overall,55,100.0,12643,229.87,44.0,590.43,1,3191,504,9.16,1.0,41.14,0,306,13147,239.04,51.0,618.57,86.0,1,3217,26,29

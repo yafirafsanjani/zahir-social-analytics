@@ -1,0 +1,4 @@
+﻿metric,count,sum,mean,std,median,min,max,q1,q3,iqr,skewness,outlier_threshold,outlier_count,outlier_pct
+likes,55,12643,229.87,590.43,44.0,1,3191,23.0,109.0,86.0,4.27,238.0,9,16.36
+comments,55,504,9.16,41.14,1.0,0,306,0.0,6.5,6.5,7.22,16.25,4,7.27
+total_interactions,55,13147,239.04,618.57,51.0,1,3217,24.0,110.0,86.0,4.31,239.0,9,16.36

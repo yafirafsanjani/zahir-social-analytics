@@ -1,0 +1,14 @@
+﻿analysis_dimension,feature_category,sample_size,missing_count,pearson_r,pearson_p_value,spearman_rho,spearman_p_value,mean_interactions,median_interactions,min_interactions,max_interactions,notes
+Correlation Analysis,Jumlah Kata Caption (Word Count),55,0,0.3803,0.0042,0.3806,0.0041,,,,,Statistically Significant (p < 0.05); Spearman rho=0.381 (Pearson r=0.380)
+Correlation Analysis,Panjang Karakter Caption Bersih,55,0,0.3826,0.0039,0.3205,0.0171,,,,,Statistically Significant (p < 0.05); Spearman rho=0.320 (Pearson r=0.383)
+Correlation Analysis,Jumlah Tagar (Hashtag Count),55,0,-0.1812,0.1854,-0.4509,0.0006,,,,,Statistically Significant (p < 0.05); Spearman rho=-0.451 (Pearson r=-0.181)
+Hashtag Presence (has_hashtags),Tanpa Tagar (0 Hashtags / False),16,0,,,,,505.94,264.0,18.0,3212.0,"Mann-Whitney U=119.0, p=0.0004 (Perbedaan terdistorsi kolaborasi pecahtelur.id)"
+Hashtag Presence (has_hashtags),Menggunakan Tagar (>=1 Hashtags / True),39,0,,,,,129.54,38.0,1.0,3217.0,"Mann-Whitney U=119.0, p=0.0004 (Perbedaan terdistorsi kolaborasi pecahtelur.id)"
+Hashtag Count Brackets,0 hashtags (None),16,0,,,,,505.94,264.0,18.0,3212.0,Total interaksi: 8095
+Hashtag Count Brackets,1-3 hashtags,5,0,,,,,52.2,38.0,26.0,99.0,Total interaksi: 261
+Hashtag Count Brackets,4-7 hashtags,24,0,,,,,56.0,51.5,1.0,209.0,Total interaksi: 1344
+Hashtag Count Brackets,8+ hashtags,10,0,,,,,344.7,24.0,17.0,3217.0,Total interaksi: 3447
+Caption Length Brackets,Short (<=20 words),1,0,,,,,344.0,344.0,344.0,344.0,Total interaksi: 344
+Caption Length Brackets,Medium (21-50 words),14,0,,,,,50.29,29.0,4.0,148.0,Total interaksi: 704
+Caption Length Brackets,Long (51-100 words),23,0,,,,,74.13,35.0,1.0,342.0,Total interaksi: 1705
+Caption Length Brackets,Very Long (>100 words),17,0,,,,,611.41,88.0,4.0,3217.0,Total interaksi: 10394

@@ -1,4 +1,4 @@
-﻿# Laporan Pengemasan & Pengiriman Data Lintas Platform (Fase 5.6)
+# Laporan Pengemasan & Pengiriman Data Lintas Platform (Fase 5.6)
 **Zahir Social Analytics — Final Data Packaging, Privacy Minimization, and Cross-Platform Data Delivery**  
 **Tanggal Eksekusi:** 02 November 2026  
 **Status Fase:** `COMPLETED (Tuntas 100%)`  
@@ -23,7 +23,7 @@ Laporan ini mendokumentasikan penyelesaian **Fase 5.6: Final Data Packaging & Cr
    - **Zero-Fabrication Policy**: Kolom `views` bernilai `NaN` (100% missing) dipertahankan sesuai realitas web publik tanpa login. Tidak ada pembuatan metrik sintetis *reach*, *impressions*, atau *arbitrary engagement rate*.
 3. **Paket Ekspor Customer Voice Play Store (`data/export/playstore/`)**:
    - `playstore_reviews_clean.csv` & `.xlsx` (417 ulasan, 19 kolom): Dataset ulasan bersih tanpa atribut PII (`userName`, `userImage`, `reviewer_id`, dan `reply_text` sengaja dieliminasi).
-   - `playstore_sentiment.csv` & `.xlsx` (417 ulasan, 14 kolom; 3 sheet Excel): Pemisahan tegas antara Ground Truth Anotasi Manusia (*Gold Set*, $n=417$) dan prediksi model benchmark NLP pada data uji (*Test Set*, $n=84$) yang diberi penanda eksplisit `test_pred_*`.
+   - `playstore_sentiment.csv` & `.xlsx` (417 ulasan, 14 kolom; 3 sheet Excel): Pemisahan tegas antara human-annotated Gold Set ($n=417$) dan prediksi model benchmark NLP pada data uji (*Test Set*, $n=84$) yang diberi penanda eksplisit `test_pred_*`.
    - `playstore_aspects.csv` & `.xlsx` (417 ulasan, 17 kolom wide; 3 sheet Excel): Multi-label 8 aspek produk hasil remediated Fase 5.3 dengan tepat **234 mention aspek** (Sheet 2 memuat format *Long* 234 baris, dan Sheet 3 memuat ringkasan 8 aspek).
 4. **Kamus Data & Panduan Ekspor Terpadu**:
    - Dokumen `data/export/README_data_dictionary.md` (31 KB) disusun lengkap mencakup tujuan berkas, definisi tiap kolom, tipe data, rumus metrik, kunci relasi, sumber sentimen, taksonomi 8 aspek, kebijakan nilai kosong, dan keterbatasan sampling.
@@ -56,7 +56,7 @@ Sebelum pengemasan data dilakukan, tim data science menjalankan audit komprehens
 | Berkas Sumber Aktual | Lokasi Berkas | Baris | Kolom | Status Audit & Kesesuaian |
 | :--- | :--- | :---: | :---: | :--- |
 | `playstore_reviews_final.csv` | `data/final/` | 417 | 21 | **Sesuai 100%**. 417 ulasan 5 app, rating 1-5, datetime parseable. |
-| `playstore_gold_set_final.csv` | `data/final/` | 417 | 7 | **Sesuai 100%**. 232 pos, 112 neu, 73 neg. Ground truth tervalidasi. |
+| `playstore_gold_set_final.csv` | `data/final/` | 417 | 7 | **Sesuai 100%**. 232 pos, 112 neu, 73 neg. Human-annotated Gold Set tervalidasi. |
 | `review_aspect_assignments_remediated.csv`| `data/final/topic_analysis/phase_5_3/`| 417 | 17 | **Sesuai 100%**. Tepat 234 mention aspek pada 8 aspek remediated. |
 | `sentiment_benchmark_metrics.csv` | `data/final/sentiment_benchmark/` | 4 | 18 | **Sesuai 100%**. IndoBERT Macro F1: 0.7303 vs InSet: 0.5513. |
 | `sentiment_split_manifest.csv` | `data/final/sentiment_benchmark/` | 417 | 5 | **Sesuai 100%**. 333 dev, 84 test split stratified. |
@@ -133,11 +133,11 @@ Sesuai instruksi penugasan, etika rekayasa data, dan prinsip perlindungan privas
 
 ## 6. Pemisahan Eksplisit Sentimen Manusia vs Prediksi Model
 
-Untuk mencegah kebingungan metodologis di sisi dashboard, berkas `playstore_sentiment.csv` dan `.xlsx` menerapkan segregasi kolom yang sangat ketat antara **Ground Truth** dan **Prediksi Model NLP**:
+Untuk mencegah kebingungan metodologis di sisi dashboard, berkas `playstore_sentiment.csv` dan `.xlsx` menerapkan segregasi kolom yang sangat ketat antara **human-annotated Gold Set** dan **prediksi model NLP**:
 
-1. **Kolom Ground Truth (Anotasi Manusia / Gold Set)**:
+1. **Kolom human-annotated Gold Set**:
    - `human_sentiment_label`: Menyimpan label sentimen konsensus manusia dari Gold Set Fase 4.2 (Positif = 232, Netral = 112, Negatif = 73).
-   - `sentiment_label_source`: Berisi string eksplisit `"gold_set_human_annotated"` pada seluruh 417 baris. Kolom ini menegaskan bahwa label tersebut adalah fakta kebenaran dasar (*ground truth*), bukan estimasi algoritma.
+   - `sentiment_label_source`: Berisi string eksplisit `"gold_set_human_annotated"` pada seluruh 417 baris. Kolom ini menegaskan bahwa label tersebut berasal dari anotasi manusia pada Gold Set kanonis, bukan estimasi algoritma.
 2. **Kolom Prediksi Model Benchmark**:
    - Seluruh kolom hasil inferensi model diawali dengan penanda eksplisit `test_pred_*`:
      - `test_pred_indobert` & `test_indobert_confidence` (IndoBERT Transformer)
@@ -155,40 +155,29 @@ Pada paket ekspor `playstore_aspects.csv` dan `.xlsx`, integritas 234 mention as
 
 ### 7.1 Format Wide (Tabel Utama / CSV Default)
 - **Dimensi**: 417 baris x 17 kolom.
-- **Tujuan**: Memungkinkan pengembang dashboard melakukan pemfilteran, seleksi multi-aspek, dan *cross-tabulation* ulasan pada tabel interaktif secara efisien tanpa memerlukan operasi *unpivot*.
-- **Kolom Utama**:
-  - `review_id` (Primary Key).
-  - 8 kolom indikator boolean (`aspect_customer_service`, `aspect_performance_bugs`, `aspect_features_functionality`, `aspect_pricing_subscription`, `aspect_ui_ux`, `aspect_cloud_sync`, `aspect_login_account`, `aspect_update_system`).
-  - `aspect_count`: Jumlah aspek yang terdeteksi per ulasan (0 <= aspect_count <= 4).
-  - `has_aspect`: Flag boolean apakah ulasan memiliki minimal 1 aspek (n=161, 38.61%).
-  - `dominant_aspect`: Aspek utama dengan bobot/skor kecocokan tertinggi.
-  - `dominant_confidence`: Skor keyakinan aspek dominan (0.0 - 1.0).
-  - `detected_aspects_list`: Representasi string daftar aspek terdeteksi (dipisahkan tanda koma).
-  - `keyword_evidence`: Bukti kata kunci yang memicu deteksi aspek.
+- **Kolom utama**: `review_id`, `app_name`, `review_datetime`, `human_sentiment_label`, `review_text_clean`, delapan indikator boolean kanonis, `detected_aspects`, `aspect_count`, `has_aspect`, dan `matched_keywords`.
+- **Delapan indikator kanonis**: `aspect_login_auth`, `aspect_crash_stability`, `aspect_pricing_subscription`, `aspect_sync_cloud_data`, `aspect_pos_hardware_print`, `aspect_inventory_accounting`, `aspect_certification_exam`, dan `aspect_attendance_face`.
+- Tidak terdapat `dominant_aspect`, `dominant_confidence`, `confidence_score`, atau pemetaan ulang taksonomi dalam paket ekspor.
 
-### 7.2 Format Long (Sheet `Aspect_Mentions_Long` pada XLSX)
-- **Dimensi**: Tepat **234 baris** x 6 kolom.
-- **Tujuan**: Format ideal untuk agregasi facet (*faceting*), visualisasi distribusi sentimen per-aspek (*stacked bar chart / grouped violin plot*), dan pengelompokan drill-down interaktif pada Plotly / Streamlit.
-- **Skema Kolom**:
-  - `review_id`: Foreign key ke ulasan sumber.
-  - `aspect_id`: Kode baku aspek (`customer_service`, `performance_bugs`, dsb.).
-  - `aspect_name`: Nama resmi aspek berbahasa Indonesia.
-  - `sentiment_label`: Sentimen ulasan sumber (positif, netral, negatif).
-  - `confidence_score`: Tingkat keyakinan deteksi kata kunci.
-  - `matched_keywords`: Kata kunci spesifik yang cocok pada ulasan tersebut.
+### 7.2 Format Long (Sheet `Aspect Mentions (Long)` pada XLSX)
+- **Dimensi**: Tepat **234 baris** x 7 kolom.
+- **Skema kolom**: `review_id`, `app_name`, `review_datetime`, `human_sentiment_label`, `aspect_id`, `aspect_name`, dan `matched_keywords`.
+- Sheet ini merupakan unpivot deterministik dari delapan indikator kanonis pada tabel wide; setiap pasangan `review_id`--`aspect_id` muncul tepat satu kali.
 
 ### 7.3 Distribusi 234 Mention Aspek Remediated
-| Kode Aspek | Nama Aspek | Total Mention | Positif | Netral | Negatif |
+| Kode Aspek | Nama Aspek pada Taksonomi | Total Mention | Positif | Netral | Negatif |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| `customer_service` | Layanan Pelanggan & CS | 67 | 45 | 14 | 8 |
-| `performance_bugs` | Kinerja, Bug, & Stabilitas | 44 | 14 | 14 | 16 |
-| `features_functionality` | Fitur & Fungsionalitas Aplikasi | 41 | 18 | 17 | 6 |
-| `ui_ux` | Desain Antarmuka & Kemudahan Penggunaan | 35 | 23 | 9 | 3 |
-| `pricing_subscription` | Harga & Model Berlangganan | 21 | 8 | 8 | 5 |
-| `cloud_sync` | Sinkronisasi Data & Cloud | 12 | 5 | 5 | 2 |
-| `login_account` | Otentikasi, Login, & Akun | 9 | 3 | 5 | 1 |
-| `update_system` | Pembaruan & Kompatibilitas Sistem | 5 | 2 | 2 | 1 |
-| **Total Seluruh Aspek** | **8 Kategori Produk** | **234** | **118** | **74** | **42** |
+| `login_auth` | Authentication & Access | 38 | 0 | 19 | 19 |
+| `crash_stability` | System Stability & Crash | 38 | 4 | 13 | 21 |
+| `pricing_subscription` | Pricing & Subscription | 34 | 5 | 15 | 14 |
+| `sync_cloud_data` | Cloud & Database Synchronization | 15 | 8 | 2 | 5 |
+| `pos_hardware_print` | POS & Hardware Printing | 20 | 9 | 9 | 2 |
+| `inventory_accounting` | Core Accounting & Inventory | 71 | 40 | 15 | 16 |
+| `certification_exam` | Certification Exam Engine | 11 | 0 | 7 | 4 |
+| `attendance_face` | Face Attendance & Geolocation | 7 | 4 | 1 | 2 |
+| **Total Seluruh Aspek** | **8 kategori kanonis** | **234** | **70** | **81** | **83** |
+
+Tidak ada pemetaan ke kategori `customer_service`, `performance_bugs`, `features_functionality`, `ui_ux`, atau `update_system`: kategori-kategori tersebut bukan bagian dari taksonomi Fase 5.3 dan tidak ada pada CSV/XLSX ekspor.
 
 ---
 
@@ -207,7 +196,7 @@ Sesuai dengan protokol metodologis Fase 5.4 dan 5.5, paket data Instagram memper
 3. **Audit Outlier IQR & Batasan Sampling**:
    - Berkas `instagram_engagement_metrics` menyertakan diagnosis pencilan interaksi berbasis metode Interquartile Range (IQR = Q3 - Q1 = 153.5 - 18.0 = 135.5).
    - Ditemukan tepat **9 postingan viral outlier** (16.36%) dengan total interaksi melebihi batas atas 239.0.
-   - Adanya pencilan viral ini menyebabkan disparitas tajam antara nilai mean (239.04) dan median (38.0). Dokumentasi data dictionary menegaskan bahwa dashboard harus memprioritaskan statistik non-parametrik (median) untuk mencegah bias interpretasi.
+   - Adanya pencilan viral ini menyebabkan disparitas tajam antara nilai mean (239.04) dan median (51.0). Dokumentasi data dictionary menegaskan bahwa dashboard harus memprioritaskan statistik non-parametrik (median) untuk mencegah bias interpretasi.
 
 ---
 
@@ -251,7 +240,7 @@ Untuk menjamin bahwa pembentukan paket ekspor tidak merusak artefak analitik fas
 
 ## 10. Konfirmasi Sumber Asli Tetap Tidak Berubah (Source Immutability Audit)
 
-Prinsip dasar rekayasa data analitik menyatakan bahwa data mentah (*raw data*) dan data kebenaran dasar (*gold set ground truth*) bersifat permanen dan tidak boleh dimodifikasi (*immutable*). Seluruh proses pembentukan paket ekspor Fase 5.6 beroperasi secara *read-only* terhadap berkas-berkas sumber.
+Prinsip dasar rekayasa data analitik menyatakan bahwa data mentah (*raw data*) dan human-annotated Gold Set bersifat permanen dan tidak boleh dimodifikasi (*immutable*). Seluruh proses pembentukan paket ekspor Fase 5.6 beroperasi secara *read-only* terhadap berkas-berkas sumber.
 
 Audit integritas kriptografis dan checksum file sumber mengonfirmasi status berikut:
 
@@ -262,7 +251,7 @@ Audit integritas kriptografis dan checksum file sumber mengonfirmasi status beri
 | Instagram Final Clean | `data/final/instagram_posts_final.csv` | **TIDAK BERUBAH** | 55 baris (34.5 KB) | `794b050f649bc76537cf31f12b485b66` |
 | Play Store Reviews Raw | `data/raw/playstore_reviews_raw.csv` | **TIDAK BERUBAH** | 417 baris (161.8 KB) | *Immutable source archive* |
 | Play Store Reviews Final | `data/final/playstore_reviews_final.csv` | **TIDAK BERUBAH** | 417 baris (172.4 KB) | *Preprocessed analytical base* |
-| Play Store Gold Set Final | `data/final/playstore_gold_set_final.csv` | **TIDAK BERUBAH** | 417 baris (96.7 KB) | *Ground truth human consensus* |
+| Play Store Gold Set Final | `data/final/playstore_gold_set_final.csv` | **TIDAK BERUBAH** | 417 baris (96.7 KB) | *human-annotated Gold Set* |
 | Aspect Remediated | `data/final/topic_analysis/phase_5_3/review_aspect_assignments_remediated.csv` | **TIDAK BERUBAH** | 417 baris (58.4 KB) | *234 aspect mentions frozen* |
 
 Konfirmasi ini membuktikan bahwa pembentukan paket ekspor adalah proses derivasi murni yang bebas dari efek samping (*side-effect free*).
@@ -346,13 +335,13 @@ Seluruh target operasional telah terpenuhi tanpa celah:
 1. **Preservasi Skala Data**: 55 postingan Instagram dan 417 ulasan Play Store terpelihara 100%.
 2. **Kepatuhan Privasi**: 0 nama pengguna, gambar profil, hash identifier, atau balasan developer terekspos.
 3. **Integritas Metrik**: 234 mention aspek remediated dan 13.147 interaksi riil Instagram tervalidasi matematis.
-4. **Kejujuran Metodologis**: Pemisahan tegas ground truth vs prediksi NLP serta ketiadaan metrik sintetis.
+4. **Kejujuran Metodologis**: Pemisahan tegas human-annotated Gold Set vs prediksi NLP serta ketiadaan metrik sintetis.
 5. **Ekuivalensi Ganda**: Seluruh 6 artefak tersedia dalam CSV berkinerja tinggi dan XLSX multi-sheet terformat profesional.
 6. **Zero-Defect Verification**: 58 dari 58 pengujian otomatis lintas 4 fase berhasil lulus 100%.
 
 ### 12.2 Rekomendasi untuk Pengembangan Dashboard (Fase 6)
 1. **Pemisahan Repositori**: Bangun dashboard visualisasi pada repositori Git terpisah guna memisahkan siklus hidup pengembangan analitik data (*data engineering & modeling*) dengan antarmuka pengguna (*UI/UX & deployment*).
 2. **Pemanfaatan Caching**: Manfaatkan dekorator `@st.cache_data` pada Streamlit saat memuat berkas CSV ekspor agar interaksi filter dan rendering grafik berlangsung instan (< 100 ms).
-3. **Penyajian Metrik Non-Parametrik**: Pada tab visualisasi Instagram, tampilkan **Median Interactions (38.0)** berdampingan dengan Mean Interactions (239.0) untuk memberikan konteks distribusi yang jujur kepada pemangku kepentingan.
+3. **Penyajian Metrik Non-Parametrik**: Pada tab visualisasi Instagram, tampilkan **Median Interactions (51.0)** berdampingan dengan Mean Interactions (239.0) untuk memberikan konteks distribusi yang jujur kepada pemangku kepentingan.
 4. **Visualisasi Dua Arah Ulasan & Aspek**: Gabungkan format Wide untuk tabel penelusuran ulasan dan format Long untuk visualisasi sentimen per-aspek menggunakan *stacked bar chart* atau *spider radar chart*.
 5. **Eksplorasi Cross-Platform**: Rancang kartu ringkasan eksekutif (*KPI scorecard*) yang menampilkan metrik kepuasan konsumen Play Store (66.91% ulasan positif, dominasi CS) dan daya jangkau konten Instagram (format Reels menyumbang 94.87% total interaksi).

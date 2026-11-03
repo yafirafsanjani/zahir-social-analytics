@@ -1,0 +1,6 @@
+"source_path","sha256","purpose"
+"data/raw/instagram_posts_raw.csv","71DDC5101396E29876F319C08F9E5FC0E4408AE62F5F66B4535CF8E2B18AB192","Protected immutable source used by the analytical pipeline."
+"data/raw/playstore_reviews_raw.csv","5A649ADCE76098531A7BE93405189242F13B19ED498059AD5F2C13EDA52A3B0B","Protected immutable source used by the analytical pipeline."
+"data/final/playstore_gold_set_final.csv","9CEBFC47B0426FBDAAFBB91E1313D5DBF164E301F3DEF4F244856384FAE14240","Protected immutable source used by the analytical pipeline."
+"data/final/topic_analysis/phase_5_3/review_aspect_assignments_remediated.csv","EA2C13A01B888AFF35C445B87710A9D05F1DAA12FD90F2ABFBEFBF4ED1F4237E","Protected immutable source used by the analytical pipeline."
+"data/raw/instagram_posts_raw_phase1_6_baseline.csv","71DDC5101396E29876F319C08F9E5FC0E4408AE62F5F66B4535CF8E2B18AB192","Protected immutable source used by the analytical pipeline."

@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 verify_phase5_6.py
 ------------------
@@ -16,7 +16,7 @@ Cakupan Pengujian:
 - Test 7: Source Value Fidelity (Export data values match final sources exactly)
 - Test 8: Engagement Aggregates Consistency (12,643 likes, 504 comments, 13,147 total)
 - Test 9: Aspect Taxonomy & Mention Count Integrity (Exactly 234 aspect mentions)
-- Test 10: Human Sentiment Ground Truth Integrity (Gold Set preserved 100%)
+- Test 10: Human-Annotated Gold Set Integrity (Gold Set preserved 100%)
 - Test 11: Explicit Separation of Human vs Model Predictions (test_pred_ prefixes)
 - Test 12: Privacy & Minimization Audit (No userName, userImage, reviewer_id, reply_text)
 - Test 13: Zero-Fabrication & Platform Compliance Audit (No fake reach/impressions/views)
@@ -311,7 +311,7 @@ except Exception as e:
     print(err)
 
 # ----------------------------------------------------
-# Test 10: Human Sentiment Ground Truth Integrity
+# Test 10: Human-Annotated Gold Set Integrity
 # ----------------------------------------------------
 try:
     assert (df_ps_sent['human_sentiment_label'].values == df_gold['human_sentiment_label'].values).all(), "Human sentiment mismatch with Gold Set"
@@ -321,11 +321,11 @@ try:
     assert sent_counts.get('negative', 0) == 73, f"Negative count mismatch: {sent_counts}"
     assert (df_ps_sent['sentiment_label_source'] == "gold_set_human_annotated").all(), "Invalid sentiment_label_source value"
     
-    p = "[PASS] Test 10: Human sentiment ground truth verified (232 positive, 112 neutral, 73 negative; source='gold_set_human_annotated')."
+    p = "[PASS] Test 10: Human-annotated Gold Set labels verified (232 positive, 112 neutral, 73 negative; source='gold_set_human_annotated')."
     passes.append(p)
     print(p)
 except Exception as e:
-    err = f"[FAIL] Test 10: Sentiment ground truth failed: {e}"
+    err = f"[FAIL] Test 10: Human-annotated Gold Set verification failed: {e}"
     errors.append(err)
     print(err)
 

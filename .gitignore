@@ -234,3 +234,7 @@ data/final/
 # Internal Work Journal
 AGENTS.md
 
+
+# Staging directories (for optional regeneration verification)
+data/staging/
+outputs/reports/staging_acquisition/

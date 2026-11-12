@@ -1,158 +1,141 @@
 ﻿# Zahir Social Analytics
 
-Social Media Analytics pipeline and interactive dashboard designed to evaluate brand performance, user engagement, customer sentiments, and cross-platform insights for **Zahir** using public Instagram content and Google Play Store user reviews.
+**Zahir Social Analytics** adalah repositori riset dan rekayasa data analitik untuk mempelajari interaksi media sosial serta suara pelanggan (*customer voice*) pada ekosistem PT Zahir Internasional. Proyek ini menggabungkan analisis dua kanal publik:
+1. **Google Play Store**: Ulasan pelanggan, rating kepuasan, pola responsivitas pengembang, benchmarking pemodelan sentimen NLP, dan ekstraksi taksonomi aspek berbasis aturan (*rule-based aspect taxonomy*).
+2. **Instagram (@zahiraccounting)**: Pola interaksi publik (*likes* dan *comments*), performa jenis konten, efektivitas kolaborasi, dinamika temporal publikasi, serta analisis teks takarir (*caption*) dan tagar (*hashtags*).
+
+Proyek ini ditujukan untuk dokumentasi akademik, portofolio Data Science, dan dasar pengambilan keputusan berbasis data. Aplikasi *dashboard* interaktif dikembangkan pada repositori terpisah dan tidak tercakup dalam repositori analitik inti ini.
 
 ---
 
-## 📌 Project Overview & Objectives
+## Struktur Repositori Terkonsolidasi
 
-**Zahir Social Analytics** is an academic and portfolio project that integrates multi-source social listening data into a unified business intelligence pipeline. The primary goals are:
-- **Instagram Performance & Content Strategy**: Evaluate public post engagement, content formats, reach proxies, and hashtag efficacy on the official `@zahiraccounting` page.
-- **Customer Voice on Google Play Store**: Uncover user experience themes, rating distributions, and pain points from real mobile application reviews.
-- **Sentiment & Aspect-Based Analysis**: Dissect opinions into distinct aspects (e.g., usability, customer service, performance, pricing/features) across both platforms.
-- **Cross-Platform Synthesis**: Bridge public marketing engagement with actual user satisfaction feedback in an interactive Streamlit dashboard.
-
----
-
-## 📂 Project Structure
+Repositori telah direfaktor secara menyeluruh menjadi struktur yang bersih dan modular:
 
 ```text
-zahir_social_analytics/
-├── .venv_social/               # Isolated virtual environment (Python 3.11)
+zahir-social-analytics/
+├── notebooks/                      # 8 Jupyter Notebook kanonikal mandiri
+│   ├── 01_data_acquisition.ipynb
+│   ├── 02_playstore_preprocessing_eda.ipynb
+│   ├── 03_playstore_goldset.ipynb
+│   ├── 04_sentiment_benchmark.ipynb
+│   ├── 05_aspect_analysis.ipynb
+│   ├── 06_instagram_preprocessing.ipynb
+│   ├── 07_instagram_engagement_analysis.ipynb
+│   └── 08_dataset_validation_export.ipynb
 ├── data/
-│   ├── raw/                   # Raw data files (Git-ignored)
-│   │   ├── instagram_posts_raw.csv    # Accessible public Instagram posts (CSV RFC 4180)
-│   │   ├── instagram_posts_raw.xlsx   # Styled Excel spreadsheet (OpenPyXL)
-│   │   └── playstore_reviews_raw.csv  # Authentic Play Store reviews
-│   ├── final/                 # Cleaned and processed datasets (Git-ignored)
-│   │   ├── instagram_posts_final.csv  # 55 posts, WIB (+07:00), cleaned caption
-│   │   └── playstore_reviews_final.csv # 417 reviews, privacy-reduced
-│   └── export/                # Curated final packages for separate dashboard
-│       ├── instagram/         # Clean posts, engagement metrics, content performance
-│       ├── playstore/         # Privacy-reduced reviews, sentiment, 8 aspects
-│       └── README_data_dictionary.md # Complete data dictionary and migration guide
-├── notebooks/                 # Core analysis notebooks (sequential pipeline)
-│   ├── 01_instagram_scraping.ipynb
-│   ├── 02_instagram_preprocessing.ipynb
-│   ├── 03_instagram_eda.ipynb
-│   ├── 04_playstore_preprocessing.ipynb
-│   ├── 05_playstore_eda.ipynb
-│   ├── 06_sentiment_analysis.ipynb
-│   ├── 07_topic_analysis.ipynb
-│   └── 08_cross_platform_analysis.ipynb
-├── dashboard/                 # Interactive Streamlit application
-│   └── app.py
-├── config/                    # Configuration files and schemas
-├── scraper/                   # Public data extraction utilities
-│   └── instagram_scraper.py
-├── preprocessing/             # Text cleaning and preprocessing modules
-├── analysis/                  # Modeling and analytical utilities
-├── .gitignore                 # Exclusion rules for secrets, venv, and datasets
-├── requirements.txt           # Project dependencies
-└── README.md                  # Public project documentation
+│   ├── raw/                        # Sumber data mentah lokal terlindungi (diabaikan Git)
+│   ├── final/                      # Dataset hasil pemrosesan dan anotasi lokal (diabaikan Git)
+│   └── export/                     # Paket master kanonikal, kamus data, dan inventaris ekspor
+├── outputs/
+│   ├── figures/                    # 9 visualisasi grafis profesional (High DPI)
+│   └── reports/                    # Laporan audit, staging, dan runner pengujian otomatis
+├── docs/                           # Dokumentasi metodologi, panduan anotasi, dan laporan fase
+├── archive/
+│   └── legacy_code/                # Seluruh kode dan notebook historis yang diarsipkan
+│       ├── notebooks/              # Notebook lama yang telah digantikan
+│       ├── analysis/               # Script analitik historis
+│       ├── preprocessing/          # Script preprocessing historis
+│       ├── scraper/                # Script scraper historis
+│       ├── scripts/                # Suite verifikasi dan audit fase sebelumnya
+│       ├── config/                 # Konfigurasi JSON taksonomi awal
+│       └── tools/                  # Script generator transisi
+├── requirements.txt                # Konfigurasi dependensi Python
+├── .gitignore                      # Aturan proteksi Git untuk data lokal dan virtual environment
+└── AGENTS.md                       # Jurnal teknis log aktivitas pengembangan
 ```
 
 ---
 
-## 🛠️ Tools & Technologies
+## Persyaratan Environment & Instalasi
 
-- **Language & Runtime**: Python 3.11 (`.venv_social`)
-- **Data Wrangling & Computing**: Pandas, NumPy, OpenPyXL
-- **Visual Analytics**: Matplotlib, Seaborn, Plotly
-- **Natural Language Processing**: NLTK, Scikit-learn
-- **Automation / Web Ingestion**: Playwright (Async API for unauthenticated public extraction)
-- **Application Interface**: Streamlit
-- **Reproducibility**: Jupyter Notebooks, nbclient, nbformat
+Proyek ini dibangun dan diuji menggunakan **Python 3.11.9**.
 
----
+### 1. Menyiapkan Virtual Environment
+Gunakan virtual environment terisolasi (`.venv_social` atau `.venv`):
 
-## 🚀 Pipeline & Methodology
-
-1. **Ingestion & Data Preparation**:
-   - Extract public post metadata from `@zahiraccounting` using Playwright without authentication.
-   - Accurately categorize content types (`carousel`, `image`, `video/reel`) using profile grid badges.
-   - Capture collaborative posts via `is_collaboration`, `original_account`, and `source_url`.
-   - Export dual standardized raw data: **RFC 4180 CSV** (for programmatic pipelines) and **Styled XLSX** (for human spreadsheet viewing).
-   - Ingest authentic user review records from the Google Play Store dataset (417 reviews across 5 Zahir ecosystem applications).
-   - Apply privacy-reduction techniques (removing user profile images and hashing reviewer identifiers).
-   - Execute conservative text cleaning (preserving negation, emojis, and sentiment signals) and compute response turnaround time.
-2. **Preprocessing & Text Normalization**:
-   - Cleaning captions and reviews (punctuation removal, lowercase conversion, slang normalization, Indonesian stopword filtering).
-3. **Exploratory Data Analysis (EDA)**:
-   - Instagram: engagement rate patterns, post types, hashtag distributions, temporal posting trends.
-   - Play Store: rating trends over time, version comparisons, thumbs-up impact.
-4. **Sentiment & Aspect / Topic Modeling**:
-   - Polarity labeling and topic modeling to extract core customer themes.
-5. **Interactive Executive Dashboard**:
-   - Streamlit dashboard combining KPI summaries, sentiment charts, and strategic recommendations.
-
----
-
-## 🔒 Data Ethics, Platform Limitations, and Responsible Usage
-
-This project strictly follows ethical research and platform compliance guidelines:
-- **Strict Public Access**: Extraction applies exclusively to publicly accessible web information. No CAPTCHAs, login walls, or anti-bot mechanisms are bypassed.
-- **Public Access Scope & Platform Limitations**: Dataset aktif Instagram proyek ini berisi **55 postingan** yang diperoleh secara sah melalui proses akuisisi web publik tanpa login. Tanpa autentikasi, platform membatasi grid feed profil ke 12 item dan tab reels ke 44 item sebelum memunculkan batas interaksi publik. Dataset 55 postingan ini menjadi baseline resmi yang dikunci dan dianalisis dalam proyek.
-- **Authenticated Feasibility Assessment (Phase 1.7)**: Pengujian manual peramban terotentikasi (*logged-in session*) oleh pemilik proyek mengonfirmasi adanya potensi visibilitas historis yang lebih luas (>500 postingan profil dan >100 reels yang mencakup arsip hingga 2017). Visibilitas terotentikasi ini diperlakukan secara ketat sebagai **temuan kelayakan teknis (feasibility finding)**, BUKAN sebagai dataset yang telah dikumpulkan. Demi kepatuhan etika data dan keamanan akun, proyek tidak melakukan otomasi scraping berbasis sesi pribadi. Kelengkapan historis menyeluruh tidak diklaim dalam dataset baseline.
-- **Dual Format Output**: Data raw disimpan dalam format CSV terenkapsulasi penuh (`QUOTE_ALL`) dan format Excel XLSX dengan penyesuaian lebar kolom agar tidak terpotong saat dibuka di spreadsheet.
-- **Unavailable Public Metrics (`views`)**: Play counts/views are not exposed on unauthenticated Instagram web endpoints; these remain recorded as `NaN` without speculation.
-- **Collaborative Posts**: Collaborative posts shown on `@zahiraccounting`'s public feed are tracked with complete provenance to distinguish internal content from co-authored posts.
-- **Play Store Exploratory Data Analysis & Customer Voice (Phase 3)**: Seluruh 417 ulasan terproses telah dianalisis secara komprehensif pada 
-otebooks/05_playstore_eda.ipynb. Analisis mencakup profil distribusi rating, disparitas antar-aplikasi, tren temporal (2018–2026), keterlibatan tanggapan pengembang (87.8% balasan), penanganan audit artefak temporal waktu respon (15 kasus pembaruan ulasan pasca-tanggapan), sinyal engagement thumbs-up, serta karakteristik panjang teks. Pemodelan linguistik sentimen dan topic modeling NLP diisolasi secara metodologis untuk fase lanjutan.
-- **Play Store Privacy-Reduced Analytical Dataset (Phase 2)**: Dataset mentah Google Play Store (417 ulasan) dipertahankan tanpa perubahan (*immutable*). Pada dataset analitik olahan (`data/final/playstore_reviews_final.csv`), privasi dilindungi dengan menghapus URL avatar dan menyamarkan nama akun pengguna menjadi `reviewer_id` berbasis hash SHA-256. Nilai rating bintang dan polaritas sentimen teks diperlakukan secara terpisah secara metodologis.
-- **Zero Credentials Policy**: No passwords, cookies, session IDs, or private tokens are requested, used, or stored.
-- **Repository Safety**: Datasets (`data/raw/`, `data/final/`) and internal logs (`AGENTS.md`) are completely excluded via `.gitignore`.
-
----
-
-## ⚙️ Getting Started
-
-### 1. Prerequisites
-- Python 3.11.x installed.
-- Git.
-
-### 2. Setting Up the Environment
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/zahir-social-analytics.git
-cd zahir-social-analytics
-
-# Activate the virtual environment
-# Windows PowerShell:
+```powershell
+# Menggunakan virtual environment baru pada Windows PowerShell
+py -3.11 -m venv .venv_social
 .\.venv_social\Scripts\Activate.ps1
 
-# Install required dependencies
-pip install -r requirements.txt
+# Instalasi seluruh pustaka yang dipersyaratkan
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-### 3. Data Ingestion
-- Instagram: Run `python scraper/instagram_scraper.py` or execute `notebooks/01_instagram_scraping.ipynb`.
-- Google Play Store: Place the authentic raw dataset at `data/raw/playstore_reviews_raw.csv`.
-
-### 4. Running the Dashboard
-```bash
-streamlit run dashboard/app.py
+### 2. Membuka Jupyter Lab / Notebook
+```powershell
+jupyter lab
 ```
+Pastikan kernel yang dipilih di Jupyter Lab mengarah ke interpreter Python virtual environment proyek.
 
 ---
 
-## 📊 Project Milestones & Progress
+## Urutan & Alur Eksekusi Notebook
 
-- [x] **Fase 0: Setup Lingkungan & Tata Kelola Proyek**
-- [x] **Fase 1: Scraping Data Publik Instagram & Standarisasi Output Ganda (CSV & XLSX)**
-- [x] **Fase 1.5: Instagram Scraping Expansion & Coverage Audit (55 Postingan Publik Valid)**
-- [x] **Fase 1.6: Sampling Bias Audit & Frozen Baseline Establishment (55 Baseline Posts Locked)**
-- [x] **Fase 1.7: Authenticated Access Feasibility & Acquisition Design**
-- [x] **Fase 2: Preprocessing & Data Cleaning Play Store (417 Ulasan Olahan & Skema Analitik)**
-- [x] **Fase 3: Exploratory Data Analysis (EDA) & Customer Voice Play Store (417 Ulasan Dianalisis)**
-- [x] **Fase 3.1: EDA Validation & Interpretation Correction (Audit Angka & Koreksi Over-interpretasi)**
-- [x] **Fase 4.1: Full Gold Set Preparation & Sentiment Analysis Readiness Audit (417 Ulasan Disiapkan untuk Anotasi Manual)**
-- [x] **Fase 4.2: Final Gold Set Validation & Freeze (417 Ulasan Teranotasi Manusia Tervalidasi & Dikunci)**
-- [x] **Fase 4.3: NLP Sentiment Benchmarking & Baseline Comparison (IndoBERT vs InSet Lexicon vs Baseline)**
-- [x] **Fase 5.1: Topic Analysis Readiness Audit (Audit Kualitas Teks, Evaluasi Metodologi & Lingkup Data)**
-- [x] **Fase 5.2: Aspect Taxonomy Construction & Customer Voice Extraction (8 Aspek Produk Terformalitasi & Tervalidasi)**
-- [x] **Fase 5.3: Manual Validation Integration & Quality Audit (Integrasi Validasi Manual 30 Sampel, Rekonsiliasi Multi-Label, Remediasi Kata Kunci Terkontrol, & Laporan Audit Akhir)**
-- [x] **Fase 5.4: Instagram Preprocessing & Final Dataset (Standardisasi Temporal WIB, Pembersihan Caption, & Dataset Final 55 Postingan)**
-- [x] **Fase 5.5: Instagram Social Engagement & Content Performance Analysis (Evaluasi Keterlibatan Riil 55 Post, Komparasi Format, Analisis Kolaborasi, Korelasi Caption/Tagar, & 7 Pasang Artefak Data)**
-- [x] **Fase 5.6: Final Data Packaging & Cross-Platform Data Delivery (Paket Ekspor Siap Dashboard, Format CSV & XLSX, Reduksi Privasi, Pemisahan Ground Truth vs Prediksi Model, 234 Aspek Remediated, & Kamus Data)**
-- [ ] **Fase 6: Sintesis Cross-Platform & Dashboard Interaktif Streamlit**
+Seluruh alur pemrosesan data dan analisis utama dapat dijalankan secara mandiri melalui 8 notebook utama di dalam direktori `notebooks/`. Setiap notebook beroperasi dalam mode aman *read-only* secara default tanpa menimpa data kanonikal:
+
+| No | Notebook | Tujuan & Input Utama | Logika Pemrosesan | Output Utama |
+|---|---|---|---|---|
+| **01** | `01_data_acquisition.ipynb` | Akuisisi data publik Instagram & Play Store.<br>Input: `data/raw/` | Implementasi scraper (Playwright/BS4 & Google Play Scraper) dengan sakelar offline `RUN_SCRAPER = False`. Validasi integritas baseline. | Profil dataset mentah, verifikasi SHA-256, figure `raw_data_profile.png`. |
+| **02** | `02_playstore_preprocessing_eda.ipynb` | Preprocessing ulasan Play Store & Analisis Eksploratif.<br>Input: `playstore_reviews_raw.csv` | Reduksi privasi (SHA-256 `reviewer_id`), pembersihan teks konservatif, analisis bimodal J-curve rating, disparitas 5 aplikasi, anomali 15 respon negatif. | Matriks kepuasan, figure `playstore_rating_balasan.png` & `playstore_per_app_eda.png`. |
+| **03** | `03_playstore_goldset.ipynb` | Validasi anotasi sentimen manusia (Gold Set).<br>Input: `playstore_gold_set_final.csv` | Audit keunikan 417 ulasan, verifikasi distribusi sentimen (232 pos, 112 neu, 73 neg), analisis divergensi rating vs teks. | Crosstab rating-sentimen, figure `goldset_distribution.png`. |
+| **04** | `04_sentiment_benchmark.ipynb` | Evaluasi komparatif 4 model klasifikasi sentimen NLP.<br>Input: `sentiment_benchmark/` | Evaluasi pada 84 ulasan *held-out test* vs 333 *dev* (Majority, InSet Lexicon, TF-IDF+LR, IndoBERT), confusion matrix heatmaps, error analysis. | Matriks kinerja NLP, figure `sentiment_benchmark.png`. |
+| **05** | `05_aspect_analysis.ipynb` | Ekstraksi taksonomi aspek ulasan berbasis aturan.<br>Input: `playstore_reviews_final.csv`, taksonomi | Engine regex in-memory 8 aspek kanonikal, verifikasi kesetaraan paritas 100% terhadap 234 *mentions* remediated, audit manual 30 sampel (90% agreement). | Sebaran multi-label, korelasi aspek-sentimen, figure `aspek_sentimen.png`. |
+| **06** | `06_instagram_preprocessing.ipynb` | Standardisasi skema 27 kolom Instagram.<br>Input: `instagram_posts_raw.csv` | Penyesuaian zona waktu WIB (+07:00), klasifikasi konten, pembersihan caption, kebijakan nol-fabrikasi (*views* 100% NaN). | Profil format & kolaborasi, figure `instagram_preprocessing_profile.png`. |
+| **07** | `07_instagram_engagement_analysis.ipynb` | Analisis performa interaksi konten media sosial.<br>Input: `instagram_master.csv` | Statistik deskriptif (likes, comments, total interactions), ambang batas outlier IQR (239.0), format vs kolaborasi, korelasi Spearman teks & tagar. | Evaluasi interaksi konten, figure `instagram_format_kolaborasi.png` & `instagram_engagement_deepdive.png`. |
+| **08** | `08_dataset_validation_export.ipynb` | Audit kualitas data & verifikasi paket ekspor.<br>Input: `data/export/`, manifest | Verifikasi SHA-256 5 sumber data terlindungi, audit skema master datasets, pemeriksaan kesetaraan 35 pasang CSV/XLSX, generator ekspor staging. | Laporan audit integritas data dan kepatuhan handoff data. |
+
+---
+
+## Dataset Master & Sumber Kanonikal
+
+Master dataset kanonikal tersimpan pada direktori:
+- **Instagram Master**: `data/export/instagram/master/instagram_master.csv` (55 baris, 27 kolom, 0 duplikat).
+- **Play Store Master**: `data/export/playstore/master/playstore_master.csv` (417 baris, 33 kolom, 0 duplikat).
+- **Kamus Data & Relasi**: `data/export/README_data_dictionary.md` dan `data/export/dataset_relationships.md`.
+- **Integritas Sumber Data**: `data/export/source_integrity_manifest.csv` (menyimpan hash SHA-256 seluruh sumber terlindungi).
+
+---
+
+## Ringkasan Metodologi & Temuan Analisis
+
+1. **Google Play Store**:
+   - Menunjukkan distribusi rating bimodal bertipe *J-curve* (59,47% rating bintang 5 dan 17,75% rating bintang 1).
+   - Rata-rata kepuasan tertinggi berada pada Zahir Attendance (4,25) dan Zahir Simple Start (4,19), sedangkan terendah pada Zahir Certification (3,05).
+   - Responsivitas pengembang sangat tinggi (87,77% ulasan dibalas pengembang). Anomali selisih hari negatif (15 kasus) terbukti valid karena pengguna mengedit ulasan setelah pengembang membalas.
+   - Evaluasi model sentimen pada 84 ulasan *held-out test* menempatkan **IndoBERT** sebagai model terbaik (*Accuracy* 0,7738; *Macro-F1* 0,7099), mengungguli TF-IDF + Logistic Regression (0,7619 / 0,6860), InSet Lexicon (0,3571 / 0,3433), dan Majority Baseline (0,5595 / 0,2392).
+   - Ekstraksi 8 aspek menghasilkan tepat 234 *aspect mentions* setelah remediasi kata kunci, dengan tingkat kesesuaian 90,0% pada sampel audit 30 ulasan.
+
+2. **Instagram @zahiraccounting**:
+   - Total interaksi terkumpul sebesar 13.147 (12.643 likes dan 504 comments) dengan median 51 interaksi per postingan.
+   - Distribusi interaksi sangat condong ke kanan (*right-skewed*), dengan 9 postingan teridentifikasi sebagai *viral outliers* (melebihi ambang IQR 239,0).
+   - Konten kolaborasi menghasilkan rata-rata interaksi jauh lebih tinggi (456,7) dibandingkan konten organik murni (43,9) berkat perluasan audiens mitra.
+   - Postingan Reels mendominasi volume (44 dari 55 postingan) dan total interaksi (12.472 interaksi).
+
+---
+
+## Keterbatasan Dataset & Kebijakan Data
+
+1. **Sampling Bias Instagram**: Data postingan publik terbatas pada 55 konten yang dapat diakses publik tanpa login. Dominasi format Reels (80%) mencerminkan batasan algoritma akses web publik Instagram, bukan keseluruhan sejarah penerbitan sejak 2017.
+2. **Kebijakan Nol-Fabrikasi Metrik**: Instagram web publik tidak menampilkan metrik *views*, *reach*, *impressions*, dan *followers*. Metrik tersebut tetap dipertahankan murni bernilai `NaN` (100% missing) dan **tidak pernah dimanipulasi menjadi nol** atau diisi angka sintetis.
+3. **Pemisahan Konseptual Sentimen vs Rating**: Rating bintang adalah variabel bantuan berbasis skor (1–5) dan tidak ekuivalen dengan sentimen teks. Label sentimen manusia pada Gold Set dipertahankan 100% dan tidak pernah ditimpa oleh prediksi model.
+4. **Keterbatasan Evaluasi NLP**: Benchmarking NLP dievaluasi pada 84 sampel uji berstrata. Angka performa mencerminkan kinerja pada set data uji lokal dan tidak menjamin generalisasi ke domain bahasa lain.
+5. **Korelasi vs Kausalitas**: Hubungan statistik antara panjang caption atau jumlah tagar terhadap interaksi merupakan observasi empiris dan tidak boleh diinterpretasikan sebagai hubungan sebab-akibat langsung.
+
+---
+
+## Pengujian & Verifikasi Kualitas Otomatis
+
+Seluruh pipeline dilengkapi dengan rangkaian pengujian kualitas data dan regresi otomatis. Untuk menjalankan verifikasi menyeluruh:
+
+```powershell
+python outputs/reports/run_all_tests.py
+```
+
+Rangkaian pengujian mencakup:
+- Validasi struktur JSON dan skema `nbformat` v4 pada 8 notebook kanonikal.
+- Verifikasi checksum SHA-256 terhadap 5 dataset sumber data terlindungi.
+- Validasi skema, ukuran baris, keunikan kunci primer, dan kebijakan privasi pada Instagram Master dan Play Store Master.
+- Eksekusi 5 suite pengujian regresi historis (Fase 5.3, 5.4, 5.5, 5.6, dan 5.8) dengan hasil **100% PASS (0 Failed)**.

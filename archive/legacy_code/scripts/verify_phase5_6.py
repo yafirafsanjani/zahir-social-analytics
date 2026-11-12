@@ -38,7 +38,13 @@ print("=" * 75)
 errors = []
 passes = []
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_cur = os.path.abspath(__file__)
+while _cur and not os.path.isdir(os.path.join(_cur, "data", "export")):
+    _parent = os.path.dirname(_cur)
+    if _parent == _cur:
+        break
+    _cur = _parent
+BASE_DIR = _cur if os.path.isdir(os.path.join(_cur, "data", "export")) else "." 
 RAW_IG_CSV = os.path.join(BASE_DIR, "data", "raw", "instagram_posts_raw.csv")
 FINAL_IG_CSV = os.path.join(BASE_DIR, "data", "final", "instagram_posts_final.csv")
 GOLD_SET_CSV = os.path.join(BASE_DIR, "data", "final", "playstore_gold_set_final.csv")

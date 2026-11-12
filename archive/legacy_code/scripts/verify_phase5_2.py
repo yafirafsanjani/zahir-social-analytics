@@ -172,7 +172,7 @@ if not privacy_violation:
 report_path = "docs/aspect_analysis_report.md"
 module_path = "analysis/aspect_extraction.py"
 nb_path = "notebooks/07_aspect_analysis.ipynb"
-cfg_path = "config/aspect_taxonomy.json"
+cfg_path = "config/aspect_taxonomy.json" if os.path.exists("config/aspect_taxonomy.json") else "archive/legacy_code/config/aspect_taxonomy.json"
 
 if os.path.exists(report_path) and os.path.exists(module_path) and os.path.exists(nb_path) and os.path.exists(cfg_path):
     print(f"[PASS] Test 9: All deliverable files exist ({report_path}, {module_path}, {nb_path}, {cfg_path}).")

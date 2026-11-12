@@ -6,7 +6,9 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve()
+while ROOT.parent != ROOT and not (ROOT / 'data' / 'export').is_dir():
+    ROOT = ROOT.parent
 EXPORT = ROOT / 'data' / 'export'
 
 

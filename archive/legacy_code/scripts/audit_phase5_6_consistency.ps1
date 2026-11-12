@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference='Stop';$root=Split-Path -Parent $PSScriptRoot;$ok=0;$bad=0
+﻿$ErrorActionPreference='Stop';$root=$PSScriptRoot;while($root -and -not (Test-Path (Join-Path $root 'data/export'))){$root=Split-Path -Parent $root};$ok=0;$bad=0
 function C($v,$m){if($v){"[PASS] $m";$script:ok++}else{"[FAIL] $m";$script:bad++}}
 function Same($a,$b,$k){$x=@(Import-Csv $a|Sort-Object $k|ConvertTo-Csv -NoTypeInformation);$y=@(Import-Csv $b|Sort-Object $k|ConvertTo-Csv -NoTypeInformation);return (Compare-Object $x $y).Count -eq 0}
 function XlsxRows($p){[xml]$x=& tar -xOf $p xl/worksheets/sheet2.xml;$n=New-Object System.Xml.XmlNamespaceManager($x.NameTable);$n.AddNamespace('x','http://schemas.openxmlformats.org/spreadsheetml/2006/main');$z=@();foreach($r in $x.SelectNodes('//x:sheetData/x:row',$n)){$h=@{};foreach($c in $r.SelectNodes('x:c',$n)){$q=([regex]::Match($c.r,'^[A-Z]+')).Value;$v=$c.SelectSingleNode('x:is/x:t',$n);if($null -eq $v){$v=$c.SelectSingleNode('x:v',$n)};$h[$q]=if($null -eq $v){''}else{$v.InnerText}};$z+=[pscustomobject]$h};$z}

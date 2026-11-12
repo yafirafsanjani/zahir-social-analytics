@@ -14,7 +14,7 @@ passes = []
 GOLD_CSV = "data/final/playstore_gold_set_final.csv"
 GOLD_XLSX = "data/final/playstore_gold_set_final.xlsx"
 REVIEWS_CSV = "data/final/playstore_reviews_final.csv"
-TAXONOMY_JSON = "config/aspect_taxonomy.json"
+TAXONOMY_JSON = "config/aspect_taxonomy.json" if os.path.exists("config/aspect_taxonomy.json") else "archive/legacy_code/config/aspect_taxonomy.json"
 
 P52_DIR = "data/final/topic_analysis"
 P53_DIR = "data/final/topic_analysis/phase_5_3"
